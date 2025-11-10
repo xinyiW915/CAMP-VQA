@@ -12,8 +12,6 @@ Official Code for the following paper:
 
 Try our online demo on Hugging Face 🤗: [https://huggingface.co/spaces/xinyiW915/CAMP-VQA](https://huggingface.co/spaces/xinyiW915/CAMP-VQA)
 
-### ☑️ TODO
-- [ ] More updates coming soon 🤗
 ---
 ## Performance
 
