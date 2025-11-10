@@ -1,0 +1,1584 @@
+INFO - Evaluating algorithm quality_embs with Mlp on dataset konvid_1k
+INFO - torch cuda: True
+INFO - 1th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.02603937680538881, KRCC: -0.015404676701347484, PLCC: 0.11103694022506598, RMSE: 0.6256381122564304
+INFO - Train set - Evaluation Results - SRCC: 0.03931148860715369, KRCC: 0.029085024049157006, PLCC: 0.06643853497108507, RMSE: 0.638758661118311
+INFO - Epoch 6:
+INFO - Validation set - Evaluation Results - SRCC: -0.018848024849943922, KRCC: -0.01026204311642716, PLCC: 0.1115893742456199, RMSE: 0.6255991582578497
+INFO - Train set - Evaluation Results - SRCC: -0.00851016814628574, KRCC: -0.00621638916433579, PLCC: 0.06648966283156617, RMSE: 0.6387564808959322
+INFO - Epoch 7:
+INFO - Validation set - Evaluation Results - SRCC: 0.028814872559565333, KRCC: 0.02407537233081186, PLCC: 0.17119555681698248, RMSE: 0.6202372331991969
+INFO - Train set - Evaluation Results - SRCC: -0.0001797910531518125, KRCC: -0.0002106141146886547, PLCC: 0.08458546366611991, RMSE: 0.6378788765517194
+INFO - Epoch 76:
+INFO - Validation set - Evaluation Results - SRCC: 0.019046287420846603, KRCC: 0.009873470936876159, PLCC: 0.17322811720399822, RMSE: 0.6200135357005371
+INFO - Train set - Evaluation Results - SRCC: 0.013028366463969742, KRCC: 0.009838101240352764, PLCC: 0.09281206358042669, RMSE: 0.6374098967811567
+INFO - Epoch 77:
+INFO - Validation set - Evaluation Results - SRCC: 0.018111676780276958, KRCC: 0.009328453569268404, PLCC: 0.17691679899111223, RMSE: 0.6196029746518331
+INFO - Train set - Evaluation Results - SRCC: -0.008571330093779049, KRCC: -0.006506518388170985, PLCC: 0.092828867306944, RMSE: 0.6374088939547236
+INFO - Epoch 81:
+INFO - Validation set - Evaluation Results - SRCC: 0.01874923102827114, KRCC: 0.009536432205987799, PLCC: 0.17771451721248394, RMSE: 0.6195102204853844
+INFO - Train set - Evaluation Results - SRCC: 0.013159046670613406, KRCC: 0.009962461056185624, PLCC: 0.09314591100387315, RMSE: 0.6373899388371624
+INFO - Epoch 98:
+INFO - Validation set - Evaluation Results - SRCC: 0.01839074392925608, KRCC: 0.009204571397106, PLCC: 0.17777326827798465, RMSE: 0.6195036213217389
+INFO - Train set - Evaluation Results - SRCC: 0.013509489490994123, KRCC: 0.010167632249470955, PLCC: 0.09328005833133597, RMSE: 0.6373818989414292
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: -0.0029896088054196207
+INFO - KRCC_train: -0.0022075180995375578
+INFO - PLCC_train: 0.09625296604746175
+INFO - RMSE_train: 0.6355168608879301
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: 0.09743826340615436
+INFO - KRCC_test: 0.07125029110637984
+INFO - PLCC_test: 0.1872313515777227
+INFO - RMSE_test: 0.6346043377027885
+INFO - ======================================================
+INFO -  -- 1.990145206451416 seconds elapsed...
+
+
+INFO - 2th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.08601496803120012, KRCC: -0.05898524976974968, PLCC: 0.18748972738220537, RMSE: 0.6200744016060793
+INFO - Train set - Evaluation Results - SRCC: -0.03103368329313925, KRCC: -0.022237412009391506, PLCC: 0.10436033900653921, RMSE: 0.6368059248101325
+INFO - Epoch 7:
+INFO - Validation set - Evaluation Results - SRCC: -0.16330814914169647, KRCC: -0.12474343786297888, PLCC: 0.20602837756828674, RMSE: 0.6177257360166126
+INFO - Train set - Evaluation Results - SRCC: -0.029860271824466437, KRCC: -0.022255053934096165, PLCC: 0.07688489506970661, RMSE: 0.6384069518664697
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.05326543962254759
+INFO - KRCC_train: 0.03871764020830592
+INFO - PLCC_train: 0.10579167509685866
+INFO - RMSE_train: 0.6353359780561061
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: 0.089666252557696
+INFO - KRCC_test: 0.06495424155216513
+INFO - PLCC_test: 0.09825477498114848
+INFO - RMSE_test: 0.6452464779978895
+INFO - ======================================================
+INFO -  -- 1.2542026042938232 seconds elapsed...
+
+
+INFO - 3th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.014180818656313708, KRCC: -0.00869714283669335, PLCC: 0.09845558299110677, RMSE: 0.636066000532984
+INFO - Train set - Evaluation Results - SRCC: -0.03162154790411588, KRCC: -0.022472917228247288, PLCC: 0.07119478693472958, RMSE: 0.6450685749357534
+INFO - Epoch 2:
+INFO - Validation set - Evaluation Results - SRCC: -0.031058495906920124, KRCC: -0.021056009866247984, PLCC: 0.09999366926121481, RMSE: 0.6359679689085269
+INFO - Train set - Evaluation Results - SRCC: 0.028840801218196037, KRCC: 0.02245154913711154, PLCC: 0.09550308750210465, RMSE: 0.6437536210550077
+INFO - Epoch 3:
+INFO - Validation set - Evaluation Results - SRCC: -0.06220301745943988, KRCC: -0.04451895661003826, PLCC: 0.11070511751537675, RMSE: 0.6352426525872295
+INFO - Train set - Evaluation Results - SRCC: -0.016448585291740668, KRCC: -0.011229912685221288, PLCC: 0.09374963211427714, RMSE: 0.6438614088291508
+INFO - Epoch 4:
+INFO - Validation set - Evaluation Results - SRCC: -0.0182396312601223, KRCC: -0.01200290307946941, PLCC: 0.11105717197542854, RMSE: 0.635217546950094
+INFO - Train set - Evaluation Results - SRCC: -0.016788484427446113, KRCC: -0.011557352030168536, PLCC: 0.08938395398271864, RMSE: 0.6441210230295339
+INFO - Epoch 21:
+INFO - Validation set - Evaluation Results - SRCC: 0.04995552323546449, KRCC: 0.035165945375823335, PLCC: 0.13678065530456104, RMSE: 0.6331641063334297
+INFO - Train set - Evaluation Results - SRCC: 0.013088169388288932, KRCC: 0.009732746244670656, PLCC: 0.10108694779662614, RMSE: 0.643396935631005
+INFO - Epoch 22:
+INFO - Validation set - Evaluation Results - SRCC: 0.021288828867939685, KRCC: 0.01374682303739247, PLCC: 0.1547012930325077, RMSE: 0.6314766494291767
+INFO - Train set - Evaluation Results - SRCC: 0.012846223865292243, KRCC: 0.009461400342788015, PLCC: 0.10037705817854106, RMSE: 0.643443417521513
+INFO - Epoch 124:
+INFO - Validation set - Evaluation Results - SRCC: 0.049081179946457755, KRCC: 0.03416558298436987, PLCC: 0.15474500938605548, RMSE: 0.6314722734067266
+INFO - Train set - Evaluation Results - SRCC: 0.02339797478827059, KRCC: 0.017410890006696614, PLCC: 0.11781323457492263, RMSE: 0.6422058191669907
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.05742853885098274
+INFO - KRCC_train: 0.04271218184507337
+INFO - PLCC_train: 0.10547873604783764
+INFO - RMSE_train: 0.6420183898393302
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: -0.006977347678374893
+INFO - KRCC_test: -0.00406976594654007
+INFO - PLCC_test: 0.11590761492120341
+INFO - RMSE_test: 0.613356035395226
+INFO - ======================================================
+INFO -  -- 1.260465383529663 seconds elapsed...
+
+
+INFO - 4th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: 0.04920239063091457, KRCC: 0.040436838915467864, PLCC: 0.04462234428020567, RMSE: 0.630493293138045
+INFO - Train set - Evaluation Results - SRCC: -0.008316189964708011, KRCC: -0.005985861405543721, PLCC: 0.08247056687623933, RMSE: 0.6393028872010627
+INFO - Epoch 2:
+INFO - Validation set - Evaluation Results - SRCC: 0.044258413271931044, KRCC: 0.03663759409198957, PLCC: 0.05994091768801096, RMSE: 0.6299871611618069
+INFO - Train set - Evaluation Results - SRCC: -0.010924287905448238, KRCC: -0.007771931417367776, PLCC: 0.04377768398323922, RMSE: 0.6408731198662717
+INFO - Epoch 3:
+INFO - Validation set - Evaluation Results - SRCC: 0.046608042769551744, KRCC: 0.03816023221197862, PLCC: 0.09729099725988483, RMSE: 0.6281278762187636
+INFO - Train set - Evaluation Results - SRCC: -0.010955993244401193, KRCC: -0.0077735367737324056, PLCC: 0.1004454801084386, RMSE: 0.6382438308959442
+INFO - Epoch 5:
+INFO - Validation set - Evaluation Results - SRCC: 0.04389867191366425, KRCC: 0.03580790997453095, PLCC: 0.11463506075088811, RMSE: 0.6269613722282587
+INFO - Train set - Evaluation Results - SRCC: -0.01100818756104579, KRCC: -0.008042606301021238, PLCC: 0.08406851189835877, RMSE: 0.6392172331988063
+INFO - Epoch 6:
+INFO - Validation set - Evaluation Results - SRCC: 0.046322382931380295, KRCC: 0.03769533140887823, PLCC: 0.11463506116282045, RMSE: 0.6269613698283041
+INFO - Train set - Evaluation Results - SRCC: -0.010993293076240978, KRCC: -0.008297523750327244, PLCC: 0.004047153219588307, RMSE: 0.6414828629059532
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.0015938902390036916
+INFO - KRCC_train: 0.0009086859522878049
+INFO - PLCC_train: 0.07632039199110782
+INFO - RMSE_train: 0.6379911563081279
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: 0.10494191031124009
+INFO - KRCC_test: 0.07694959640832362
+INFO - PLCC_test: 0.1704896112811901
+INFO - RMSE_test: 0.6352106298288352
+INFO - ======================================================
+INFO -  -- 2.0173251628875732 seconds elapsed...
+
+
+INFO - 5th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.04291539882554385, KRCC: -0.03103243951930251, PLCC: 0.091226235113956, RMSE: 0.6242400686023671
+INFO - Train set - Evaluation Results - SRCC: 0.009420185291502518, KRCC: 0.006848598561706915, PLCC: 0.05363264805213898, RMSE: 0.6354074216129021
+INFO - Epoch 7:
+INFO - Validation set - Evaluation Results - SRCC: -0.006998916272541999, KRCC: -0.004031829898318029, PLCC: 0.09122623511395603, RMSE: 0.624240068602367
+INFO - Train set - Evaluation Results - SRCC: -0.050339859135360474, KRCC: -0.03681277683037255, PLCC: 0.05164245463739715, RMSE: 0.6354741748414708
+INFO - Epoch 52:
+INFO - Validation set - Evaluation Results - SRCC: -0.01345881746591807, KRCC: -0.009488279797199958, PLCC: 0.09182658919420397, RMSE: 0.6242054788861207
+INFO - Train set - Evaluation Results - SRCC: 0.018287644470303763, KRCC: 0.013688633208580051, PLCC: 0.10322578380799782, RMSE: 0.6329239896846359
+INFO - Epoch 57:
+INFO - Validation set - Evaluation Results - SRCC: -0.08898196447674689, KRCC: -0.06382230941118076, PLCC: 0.09575636446687194, RMSE: 0.6239734099794252
+INFO - Train set - Evaluation Results - SRCC: 0.017274210317192656, KRCC: 0.013222112731481052, PLCC: 0.10387871266951752, RMSE: 0.6328807338510963
+INFO - Epoch 64:
+INFO - Validation set - Evaluation Results - SRCC: -0.012452267264540167, KRCC: -0.008421164733956198, PLCC: 0.09575636447010398, RMSE: 0.6239734099792302
+INFO - Train set - Evaluation Results - SRCC: -0.01713339649788281, KRCC: -0.012393097969961442, PLCC: 0.10392200113436567, RMSE: 0.6328778562696731
+INFO - Epoch 97:
+INFO - Validation set - Evaluation Results - SRCC: -0.01324477546001496, KRCC: -0.009628138633285245, PLCC: 0.1073286223741309, RMSE: 0.6232329692444112
+INFO - Train set - Evaluation Results - SRCC: 0.042732500284632054, KRCC: 0.031315478940955016, PLCC: 0.10480758737560454, RMSE: 0.6328187219517915
+INFO - Epoch 108:
+INFO - Validation set - Evaluation Results - SRCC: -0.012922188146102553, KRCC: -0.009701146673599928, PLCC: 0.10732862237413085, RMSE: 0.6232329692444111
+INFO - Train set - Evaluation Results - SRCC: -0.007900162611494205, KRCC: -0.005231458799458347, PLCC: 0.10555653921647476, RMSE: 0.6327683148863456
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.01275584640069279
+INFO - KRCC_train: 0.009981772961191333
+INFO - PLCC_train: 0.09383976285558353
+INFO - RMSE_train: 0.6320547082476102
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: 0.09763750204822853
+INFO - KRCC_test: 0.07226921376251412
+INFO - PLCC_test: 0.18063102671518
+INFO - RMSE_test: 0.6532727637537503
+INFO - ======================================================
+INFO -  -- 1.391441822052002 seconds elapsed...
+
+
+INFO - 6th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.07531331010475661, KRCC: -0.0571065901223505, PLCC: 0.10059189536100094, RMSE: 0.6325644430156098
+INFO - Train set - Evaluation Results - SRCC: 0.033764833279054225, KRCC: 0.025152219893278573, PLCC: 0.09407876308760775, RMSE: 0.6418488831634727
+INFO - Epoch 2:
+INFO - Validation set - Evaluation Results - SRCC: -0.06540373215949008, KRCC: -0.050015943570446975, PLCC: 0.10059189538488227, RMSE: 0.6325644430140747
+INFO - Train set - Evaluation Results - SRCC: 0.032511438783262944, KRCC: 0.02442803665705096, PLCC: 0.06664159480122625, RMSE: 0.6432751201485052
+INFO - Epoch 3:
+INFO - Validation set - Evaluation Results - SRCC: 0.09393417482439656, KRCC: 0.07027828579816349, PLCC: 0.12672862636676427, RMSE: 0.6306632126913836
+INFO - Train set - Evaluation Results - SRCC: 0.06617675604936833, KRCC: 0.0478545697077347, PLCC: 0.04849267748695492, RMSE: 0.6439498461348687
+INFO - Epoch 6:
+INFO - Validation set - Evaluation Results - SRCC: 0.010165274335982508, KRCC: 0.00946063603367308, PLCC: 0.14947132534558244, RMSE: 0.6286468931545494
+INFO - Train set - Evaluation Results - SRCC: -0.02130998413171536, KRCC: -0.01665385954513175, PLCC: 0.09721204448357981, RMSE: 0.6416547843244816
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.004987019602445476
+INFO - KRCC_train: 0.003833769097898165
+INFO - PLCC_train: 0.09869112148554729
+INFO - RMSE_train: 0.6401814297506007
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: 0.10971850780038821
+INFO - KRCC_test: 0.0847345958240969
+INFO - PLCC_test: 0.17261817062411355
+INFO - RMSE_test: 0.6209231940291395
+INFO - ======================================================
+INFO -  -- 1.2935535907745361 seconds elapsed...
+
+
+INFO - 7th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.0759932837719224, KRCC: -0.051369839034228884, PLCC: 0.18534831472918328, RMSE: 0.6142516958211419
+INFO - Train set - Evaluation Results - SRCC: -0.023998339451492084, KRCC: -0.016442200292103186, PLCC: 0.01018099755910642, RMSE: 0.6360168870869543
+INFO - Epoch 2:
+INFO - Validation set - Evaluation Results - SRCC: -0.01606888941323353, KRCC: -0.009121800957427106, PLCC: 0.19969240186843365, RMSE: 0.6124925561547313
+INFO - Train set - Evaluation Results - SRCC: -0.018719867021963835, KRCC: -0.012869443499254217, PLCC: 0.015462111538293726, RMSE: 0.6359737457978327
+INFO - Epoch 6:
+INFO - Validation set - Evaluation Results - SRCC: -0.10316547171874994, KRCC: -0.07102994453087824, PLCC: 0.2017329786608607, RMSE: 0.6122312230656282
+INFO - Train set - Evaluation Results - SRCC: -0.020074112873046862, KRCC: -0.014000449704053952, PLCC: 0.079663877111289, RMSE: 0.6340282791735907
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: -0.0419771030757979
+INFO - KRCC_train: -0.03025105744155536
+INFO - PLCC_train: 0.08715469683385571
+INFO - RMSE_train: 0.6318616724926049
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: 0.1940816969923765
+INFO - KRCC_test: 0.14263627384054223
+INFO - PLCC_test: 0.1611992402198946
+INFO - RMSE_test: 0.6565012163030248
+INFO - ======================================================
+INFO -  -- 1.2266910076141357 seconds elapsed...
+
+
+INFO - 8th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.03653273996030922, KRCC: -0.026493085151848998, PLCC: 0.145416965064252, RMSE: 0.6258878054936411
+INFO - Train set - Evaluation Results - SRCC: -0.022635263307892336, KRCC: -0.01708061083345676, PLCC: 0.12656675775885692, RMSE: 0.6362657939530318
+INFO - Epoch 2:
+INFO - Validation set - Evaluation Results - SRCC: -0.03294738504567116, KRCC: -0.0239811035434461, PLCC: 0.1454186170555586, RMSE: 0.6258876520034066
+INFO - Train set - Evaluation Results - SRCC: -0.07907391599268586, KRCC: -0.058505497611533036, PLCC: 0.13252056721748684, RMSE: 0.6357668711682842
+INFO - Epoch 4:
+INFO - Validation set - Evaluation Results - SRCC: -0.08131541229457281, KRCC: -0.05961958561003266, PLCC: 0.15430847552189556, RMSE: 0.6250352087490352
+INFO - Train set - Evaluation Results - SRCC: -0.0635758674845596, KRCC: -0.04733290553420122, PLCC: 0.13252056721748684, RMSE: 0.6357668711682842
+INFO - Epoch 5:
+INFO - Validation set - Evaluation Results - SRCC: -0.02960501243793119, KRCC: -0.022079850155454685, PLCC: 0.15430847552189556, RMSE: 0.6250352087490351
+INFO - Train set - Evaluation Results - SRCC: -0.06385030722958814, KRCC: -0.047597774166431274, PLCC: 0.13252056721748676, RMSE: 0.6357668711682841
+INFO - Epoch 7:
+INFO - Validation set - Evaluation Results - SRCC: -0.04628130321289648, KRCC: -0.034629723229080915, PLCC: 0.16750809400647246, RMSE: 0.6236738153787312
+INFO - Train set - Evaluation Results - SRCC: -0.06344166467305283, KRCC: -0.04717027813085973, PLCC: 0.048542607457494426, RMSE: 0.6406679007848102
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.060427776236426554
+INFO - KRCC_train: 0.044856523357346925
+INFO - PLCC_train: 0.1156348048606187
+INFO - RMSE_train: 0.6357937017782032
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: -0.14264334332622902
+INFO - KRCC_test: -0.10814950115265612
+INFO - PLCC_test: 0.018449954212610958
+INFO - RMSE_test: 0.6437002872553411
+INFO - ======================================================
+INFO -  -- 1.2207579612731934 seconds elapsed...
+
+
+INFO - 9th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: 0.03575545812710092, KRCC: 0.028604827775891885, PLCC: nan, RMSE: 0.6298059496318809
+INFO - Train set - Evaluation Results - SRCC: -0.02745121387926743, KRCC: -0.020499015849240222, PLCC: 0.09275130129918564, RMSE: 0.6376410626602184
+INFO - Epoch 2:
+INFO - Validation set - Evaluation Results - SRCC: -0.03340530038026666, KRCC: -0.023934276344093123, PLCC: 0.034397682142514485, RMSE: 0.6294332459980024
+INFO - Train set - Evaluation Results - SRCC: -0.07351262413744332, KRCC: -0.054044454894127646, PLCC: 0.09206841684299129, RMSE: 0.6376811307958595
+INFO - Epoch 4:
+INFO - Validation set - Evaluation Results - SRCC: 0.0043865904052562054, KRCC: 0.004038041823151516, PLCC: 0.05903593676738816, RMSE: 0.6287074788110788
+INFO - Train set - Evaluation Results - SRCC: -0.05541781947734645, KRCC: -0.04083648547604478, PLCC: 0.12393676688999239, RMSE: 0.6354636998581893
+INFO - Epoch 8:
+INFO - Validation set - Evaluation Results - SRCC: -0.09137553952425401, KRCC: -0.06682049027065007, PLCC: 0.06499137712783298, RMSE: 0.6284744300090289
+INFO - Train set - Evaluation Results - SRCC: 0.04769822446841764, KRCC: 0.03560806144086906, PLCC: 0.11686782922252834, RMSE: 0.6360127534814454
+INFO - Epoch 17:
+INFO - Validation set - Evaluation Results - SRCC: -0.028507682208138863, KRCC: -0.02135158404784539, PLCC: 0.0649942354838658, RMSE: 0.6284743127691484
+INFO - Train set - Evaluation Results - SRCC: 0.04904608311048245, KRCC: 0.03662654984662485, PLCC: 0.11735627428458095, RMSE: 0.6359758672828284
+INFO - Epoch 18:
+INFO - Validation set - Evaluation Results - SRCC: -0.08045098661933105, KRCC: -0.05914752024194006, PLCC: 0.06500676327021634, RMSE: 0.6284737988111377
+INFO - Train set - Evaluation Results - SRCC: 0.07730318375245417, KRCC: 0.056390197383019716, PLCC: 0.11816922833163045, RMSE: 0.6359141304339122
+INFO - Epoch 19:
+INFO - Validation set - Evaluation Results - SRCC: -0.028581488545184403, KRCC: -0.021844735707934125, PLCC: 0.06501266181802136, RMSE: 0.6284735567920221
+INFO - Train set - Evaluation Results - SRCC: 0.09362536957299918, KRCC: 0.06881412827724764, PLCC: 0.11886254157773607, RMSE: 0.6358611342480761
+INFO - Epoch 20:
+INFO - Validation set - Evaluation Results - SRCC: -0.095607382067484, KRCC: -0.06979523094767841, PLCC: 0.06502734618512657, RMSE: 0.6284729541922748
+INFO - Train set - Evaluation Results - SRCC: 0.05025622054747073, KRCC: 0.037832979075098076, PLCC: 0.11962675855671565, RMSE: 0.6358023567334292
+INFO - Epoch 21:
+INFO - Validation set - Evaluation Results - SRCC: -0.08081854597963839, KRCC: -0.059578842672051886, PLCC: 0.06503709854099386, RMSE: 0.6284725539110124
+INFO - Train set - Evaluation Results - SRCC: 0.050459532700009704, KRCC: 0.03803449133908883, PLCC: 0.12017333429511737, RMSE: 0.6357600836460539
+INFO - Epoch 22:
+INFO - Validation set - Evaluation Results - SRCC: -0.029011458758831522, KRCC: -0.023237635262397142, PLCC: 0.06505135550241198, RMSE: 0.6284719686317847
+INFO - Train set - Evaluation Results - SRCC: 0.051279352841149616, KRCC: 0.03868356381226133, PLCC: 0.12078403142151299, RMSE: 0.6357126192558219
+INFO - Epoch 23:
+INFO - Validation set - Evaluation Results - SRCC: -0.028827577755045537, KRCC: -0.022856826277854476, PLCC: 0.06506951587413648, RMSE: 0.628471222922504
+INFO - Train set - Evaluation Results - SRCC: 0.05139718561844031, KRCC: 0.03884745373614776, PLCC: 0.12137680538727644, RMSE: 0.6356663138984521
+INFO - Epoch 24:
+INFO - Validation set - Evaluation Results - SRCC: -0.09116018492142151, KRCC: -0.0671839843730295, PLCC: 0.06508820595493714, RMSE: 0.628470455243711
+INFO - Train set - Evaluation Results - SRCC: 0.06519352521985364, KRCC: 0.048554814068082264, PLCC: 0.12190156242025478, RMSE: 0.6356251306290475
+INFO - Epoch 25:
+INFO - Validation set - Evaluation Results - SRCC: -0.08101915027195233, KRCC: -0.06032463223429721, PLCC: 0.06511281517660987, RMSE: 0.628469444103751
+INFO - Train set - Evaluation Results - SRCC: 0.0037898165150060696, KRCC: 0.0032192118247379837, PLCC: 0.12264342801545117, RMSE: 0.6355666008235805
+INFO - Epoch 26:
+INFO - Validation set - Evaluation Results - SRCC: -0.03922189188010239, KRCC: -0.029721856329406476, PLCC: 0.06512296287191796, RMSE: 0.6284690270450156
+INFO - Train set - Evaluation Results - SRCC: 0.034601213303565845, KRCC: 0.02597458280834243, PLCC: 0.12297670839975282, RMSE: 0.6355401891557384
+INFO - Epoch 27:
+INFO - Validation set - Evaluation Results - SRCC: -0.019552071228581294, KRCC: -0.0165480565078138, PLCC: 0.06512793740023314, RMSE: 0.628468822573812
+INFO - Train set - Evaluation Results - SRCC: 0.04970442128033113, KRCC: 0.037644453719328175, PLCC: 0.12305993276670575, RMSE: 0.6355335824535273
+INFO - Epoch 28:
+INFO - Validation set - Evaluation Results - SRCC: -0.09088310871659604, KRCC: -0.06714559626368975, PLCC: 0.06513812266027535, RMSE: 0.6284684038733607
+INFO - Train set - Evaluation Results - SRCC: 0.003061661718481685, KRCC: 0.0026940032822736124, PLCC: 0.12326340588367272, RMSE: 0.6355174108409084
+INFO - Epoch 29:
+INFO - Validation set - Evaluation Results - SRCC: -0.02846435804505813, KRCC: -0.022700760322746222, PLCC: 0.06515229804938694, RMSE: 0.6284678210430662
+INFO - Train set - Evaluation Results - SRCC: 0.05071037916349896, KRCC: 0.03826893977795361, PLCC: 0.12371989726817462, RMSE: 0.6354810311116422
+INFO - Epoch 30:
+INFO - Validation set - Evaluation Results - SRCC: -0.027975631091040683, KRCC: -0.022455728791946086, PLCC: 0.06516567184053657, RMSE: 0.6284672710395597
+INFO - Train set - Evaluation Results - SRCC: 0.049909885437424154, KRCC: 0.03766549034029471, PLCC: 0.12398503293368646, RMSE: 0.6354598386478141
+INFO - Epoch 31:
+INFO - Validation set - Evaluation Results - SRCC: -0.028555620639523376, KRCC: -0.022760593571122558, PLCC: 0.06518476249057163, RMSE: 0.6284664857856604
+INFO - Train set - Evaluation Results - SRCC: 0.016745922543429628, KRCC: 0.012671752991440353, PLCC: 0.12430009284720413, RMSE: 0.6354345957832629
+INFO - Epoch 32:
+INFO - Validation set - Evaluation Results - SRCC: -0.027463784788198074, KRCC: -0.021629765911564028, PLCC: 0.06519590737171653, RMSE: 0.6284660271882504
+INFO - Train set - Evaluation Results - SRCC: 0.05026943893799361, KRCC: 0.03790911452120442, PLCC: 0.12446519418500071, RMSE: 0.635421341761236
+INFO - Epoch 33:
+INFO - Validation set - Evaluation Results - SRCC: -0.02769897703561765, KRCC: -0.021737837618412345, PLCC: 0.06520451704154932, RMSE: 0.6284656728912321
+INFO - Train set - Evaluation Results - SRCC: 0.09347706164630341, KRCC: 0.06885482514888336, PLCC: 0.12456282365895657, RMSE: 0.6354134958298555
+INFO - Epoch 34:
+INFO - Validation set - Evaluation Results - SRCC: -0.02826776865659698, KRCC: -0.022630067659539885, PLCC: 0.06521547427523326, RMSE: 0.6284652219236676
+INFO - Train set - Evaluation Results - SRCC: 0.050679143592040427, KRCC: 0.038164380555600674, PLCC: 0.12468307406080245, RMSE: 0.6354038233925798
+INFO - Epoch 35:
+INFO - Validation set - Evaluation Results - SRCC: -0.09097688068141084, KRCC: -0.0675936133292792, PLCC: 0.06522874169316267, RMSE: 0.6284646757703437
+INFO - Train set - Evaluation Results - SRCC: 0.05115354864443523, KRCC: 0.03861283817697011, PLCC: 0.12478636967209401, RMSE: 0.635395507173999
+INFO - Epoch 37:
+INFO - Validation set - Evaluation Results - SRCC: -0.027778637418695844, KRCC: -0.021844735707934125, PLCC: 0.06523498957115678, RMSE: 0.6284644185832232
+INFO - Train set - Evaluation Results - SRCC: 0.05378476521597049, KRCC: 0.040528405594449604, PLCC: 0.1247883589703472, RMSE: 0.6353953469400415
+INFO - Epoch 38:
+INFO - Validation set - Evaluation Results - SRCC: 0.02650997392193627, KRCC: 0.017931628396486668, PLCC: 0.06523571093841342, RMSE: 0.6284643888366983
+INFO - Train set - Evaluation Results - SRCC: 0.05551300392503846, KRCC: 0.0418432762832232, PLCC: 0.1247836210471613, RMSE: 0.6353957285554526
+INFO - Epoch 39:
+INFO - Validation set - Evaluation Results - SRCC: -0.026463254558112735, KRCC: -0.020922995844142974, PLCC: 0.06525356506509229, RMSE: 0.6284636536208279
+INFO - Train set - Evaluation Results - SRCC: 0.006495533769538008, KRCC: 0.005090052026495388, PLCC: 0.12498433655215355, RMSE: 0.6353795495117219
+INFO - Epoch 40:
+INFO - Validation set - Evaluation Results - SRCC: -0.02766365650901654, KRCC: -0.021982388038783128, PLCC: 0.06526538525823272, RMSE: 0.6284631667613466
+INFO - Train set - Evaluation Results - SRCC: 0.053513675472125787, KRCC: 0.040222206601058665, PLCC: 0.12505553568910144, RMSE: 0.635373804009245
+INFO - Epoch 41:
+INFO - Validation set - Evaluation Results - SRCC: -0.027335567541811587, KRCC: -0.02173141590559683, PLCC: 0.06527709140489182, RMSE: 0.6284626845132366
+INFO - Train set - Evaluation Results - SRCC: 0.05532494538245999, KRCC: 0.04166153344042271, PLCC: 0.12519392801566384, RMSE: 0.6353626267936937
+INFO - Epoch 42:
+INFO - Validation set - Evaluation Results - SRCC: -0.027217017587027145, KRCC: -0.021494050873205175, PLCC: 0.0652870002641845, RMSE: 0.6284622762486352
+INFO - Train set - Evaluation Results - SRCC: 0.08169388407321923, KRCC: 0.05983561033846776, PLCC: 0.12531778542178224, RMSE: 0.6353526128255748
+INFO - Epoch 43:
+INFO - Validation set - Evaluation Results - SRCC: -0.03616931443358561, KRCC: -0.027749540088969744, PLCC: 0.06530434137885571, RMSE: 0.6284615615856696
+INFO - Train set - Evaluation Results - SRCC: 0.0541812546442139, KRCC: 0.04083494781766376, PLCC: 0.12557407426366024, RMSE: 0.6353318597331138
+INFO - Epoch 44:
+INFO - Validation set - Evaluation Results - SRCC: -0.027380868734923857, KRCC: -0.022287677366985056, PLCC: 0.0653278094358885, RMSE: 0.6284605941266646
+INFO - Train set - Evaluation Results - SRCC: 0.05500229757752831, KRCC: 0.041479473958926046, PLCC: 0.12593278959835605, RMSE: 0.6353027402815559
+INFO - Epoch 45:
+INFO - Validation set - Evaluation Results - SRCC: -0.028237510219744633, KRCC: -0.02258640730172154, PLCC: 0.06536331749803248, RMSE: 0.6284591296623757
+INFO - Train set - Evaluation Results - SRCC: 0.05540750694568424, KRCC: 0.04188925494556192, PLCC: 0.12644473030364567, RMSE: 0.635261036256269
+INFO - Epoch 46:
+INFO - Validation set - Evaluation Results - SRCC: -0.07969920956533287, KRCC: -0.05978074017383495, PLCC: 0.06538996557965031, RMSE: 0.6284580302712154
+INFO - Train set - Evaluation Results - SRCC: 0.007210017521121476, KRCC: 0.005697066478272024, PLCC: 0.12671491664152496, RMSE: 0.6352389568393381
+INFO - Epoch 47:
+INFO - Validation set - Evaluation Results - SRCC: -0.0896097735937355, KRCC: -0.06631606344273643, PLCC: 0.0653993647841723, RMSE: 0.628457642139504
+INFO - Train set - Evaluation Results - SRCC: 0.006247193254577974, KRCC: 0.004932397107226004, PLCC: 0.12681659110422655, RMSE: 0.6352306356901252
+INFO - Epoch 48:
+INFO - Validation set - Evaluation Results - SRCC: -0.028427829850144897, KRCC: -0.02295634371614292, PLCC: 0.06542058972766703, RMSE: 0.6284567659035972
+INFO - Train set - Evaluation Results - SRCC: 0.03888036059026672, KRCC: 0.029078033324148333, PLCC: 0.12712597430267858, RMSE: 0.6352052736718781
+INFO - Epoch 49:
+INFO - Validation set - Evaluation Results - SRCC: -0.0283697267640211, KRCC: -0.02289292260351281, PLCC: 0.06543174552068391, RMSE: 0.628456305219467
+INFO - Train set - Evaluation Results - SRCC: 0.02190187092682447, KRCC: 0.01629148448233212, PLCC: 0.127230160759076, RMSE: 0.6351967187574572
+INFO - Epoch 50:
+INFO - Validation set - Evaluation Results - SRCC: -0.027112270561934097, KRCC: -0.02204420325746694, PLCC: 0.0654348679799619, RMSE: 0.6284561764104327
+INFO - Train set - Evaluation Results - SRCC: 0.02232449381567802, KRCC: 0.01664309097088637, PLCC: 0.12722267243227364, RMSE: 0.635197333860171
+INFO - Epoch 51:
+INFO - Validation set - Evaluation Results - SRCC: -0.027532810669138714, KRCC: -0.022328596705322404, PLCC: 0.06544215713556298, RMSE: 0.6284558752074092
+INFO - Train set - Evaluation Results - SRCC: 0.05521774548220361, KRCC: 0.041572976586470745, PLCC: 0.12729166438832262, RMSE: 0.635191665247788
+INFO - Epoch 52:
+INFO - Validation set - Evaluation Results - SRCC: -0.07983114665791662, KRCC: -0.059909097333097995, PLCC: 0.06545804272125291, RMSE: 0.6284552189828202
+INFO - Train set - Evaluation Results - SRCC: 0.03948452751045033, KRCC: 0.029483924023841385, PLCC: 0.127424080845521, RMSE: 0.6351807766648256
+INFO - Epoch 53:
+INFO - Validation set - Evaluation Results - SRCC: -0.02830428310525064, KRCC: -0.0227479100407026, PLCC: 0.06547196740095348, RMSE: 0.6284546436306283
+INFO - Train set - Evaluation Results - SRCC: 0.055661007845243624, KRCC: 0.04186694780244333, PLCC: 0.1276401432407619, RMSE: 0.6351629852084574
+INFO - Epoch 54:
+INFO - Validation set - Evaluation Results - SRCC: -0.027279872352303378, KRCC: -0.02215187975760126, PLCC: 0.06547551368458628, RMSE: 0.6284544970826375
+INFO - Train set - Evaluation Results - SRCC: 0.007453122325432627, KRCC: 0.00570821376029497, PLCC: 0.12764488948832853, RMSE: 0.6351625940367056
+INFO - Epoch 55:
+INFO - Validation set - Evaluation Results - SRCC: -0.02735254862049538, KRCC: -0.02207784987775521, PLCC: 0.06548903098942185, RMSE: 0.6284539384147486
+INFO - Train set - Evaluation Results - SRCC: 0.09839783504836772, KRCC: 0.07238172216023972, PLCC: 0.12777552103304085, RMSE: 0.6351518220311969
+INFO - Epoch 56:
+INFO - Validation set - Evaluation Results - SRCC: -0.028031438607636787, KRCC: -0.02311629369003172, PLCC: 0.06549848710919802, RMSE: 0.628453547525925
+INFO - Train set - Evaluation Results - SRCC: 0.05615021860004339, KRCC: 0.042241296951016534, PLCC: 0.1278857542772844, RMSE: 0.6351427233601931
+INFO - Epoch 57:
+INFO - Validation set - Evaluation Results - SRCC: -0.036326738617458824, KRCC: -0.028473774758598743, PLCC: 0.06549966754455444, RMSE: 0.6284534987320953
+INFO - Train set - Evaluation Results - SRCC: 0.03911270202510595, KRCC: 0.029240664266878807, PLCC: 0.12791700310019383, RMSE: 0.6351401426436196
+INFO - Epoch 58:
+INFO - Validation set - Evaluation Results - SRCC: -0.027334564930280403, KRCC: -0.022325029551899956, PLCC: 0.06550504000110888, RMSE: 0.6284532766150641
+INFO - Train set - Evaluation Results - SRCC: 0.055481514007715234, KRCC: 0.041706864914798567, PLCC: 0.12796563614080758, RMSE: 0.6351361249320685
+INFO - Epoch 61:
+INFO - Validation set - Evaluation Results - SRCC: -0.08364638562506352, KRCC: -0.06238419305588588, PLCC: 0.06551949723321401, RMSE: 0.6284526788257488
+INFO - Train set - Evaluation Results - SRCC: 0.02266232845402924, KRCC: 0.016835990803177107, PLCC: 0.12789298175399916, RMSE: 0.6351421265300073
+INFO - Epoch 62:
+INFO - Validation set - Evaluation Results - SRCC: -0.027337867736012995, KRCC: -0.022437817224294245, PLCC: 0.06552436527085136, RMSE: 0.6284524775284014
+INFO - Train set - Evaluation Results - SRCC: 0.05535460101087248, KRCC: 0.04164415420636113, PLCC: 0.1279608436209804, RMSE: 0.6351365209254799
+INFO - Epoch 63:
+INFO - Validation set - Evaluation Results - SRCC: -0.03689606980496625, KRCC: -0.02881403687505226, PLCC: 0.06554579464965234, RMSE: 0.6284515911375596
+INFO - Train set - Evaluation Results - SRCC: 0.02226734398128722, KRCC: 0.01662404247031106, PLCC: 0.1281884275963667, RMSE: 0.6351176996893367
+INFO - Epoch 64:
+INFO - Validation set - Evaluation Results - SRCC: -0.02757409594460117, KRCC: -0.02265535669578588, PLCC: 0.065550113571053, RMSE: 0.6284514124438053
+INFO - Train set - Evaluation Results - SRCC: 0.056052302958994105, KRCC: 0.042173332254338655, PLCC: 0.12825361103974972, RMSE: 0.6351123027371596
+INFO - Epoch 92:
+INFO - Validation set - Evaluation Results - SRCC: -0.02782098118635055, KRCC: -0.022760593571122558, PLCC: 0.06555093648544402, RMSE: 0.6284513783911448
+INFO - Train set - Evaluation Results - SRCC: 0.05550746902843421, KRCC: 0.04172585102329513, PLCC: 0.12845236880556746, RMSE: 0.6350958290998773
+INFO - Epoch 93:
+INFO - Validation set - Evaluation Results - SRCC: -0.0794612474800351, KRCC: -0.05989649417795, PLCC: 0.06556082495140982, RMSE: 0.628450969241148
+INFO - Train set - Evaluation Results - SRCC: 0.021984012364959216, KRCC: 0.0163611533180745, PLCC: 0.12851499810613004, RMSE: 0.6350906328403221
+INFO - Epoch 97:
+INFO - Validation set - Evaluation Results - SRCC: -0.027825128825441296, KRCC: -0.02279148497416253, PLCC: 0.06556437541710496, RMSE: 0.6284508223208639
+INFO - Train set - Evaluation Results - SRCC: 0.05555407231638163, KRCC: 0.04182965935601668, PLCC: 0.12853382076906292, RMSE: 0.6350890706290203
+INFO - Epoch 98:
+INFO - Validation set - Evaluation Results - SRCC: -0.08955903056344791, KRCC: -0.06687779773424575, PLCC: 0.06557161465985366, RMSE: 0.6284505227301976
+INFO - Train set - Evaluation Results - SRCC: 0.05614841423788447, KRCC: 0.042161886897266125, PLCC: 0.12861508635885063, RMSE: 0.6350823232860824
+INFO - Epoch 99:
+INFO - Validation set - Evaluation Results - SRCC: -0.0276992380336309, KRCC: -0.02279148497416253, PLCC: 0.0655755780281742, RMSE: 0.6284503586954612
+INFO - Train set - Evaluation Results - SRCC: 0.05566631566250614, KRCC: 0.04182092451208594, PLCC: 0.1286948927975561, RMSE: 0.635075692864425
+INFO - Epoch 100:
+INFO - Validation set - Evaluation Results - SRCC: -0.027442594072276626, KRCC: -0.022680879871215618, PLCC: 0.0655814515399848, RMSE: 0.6284501155947066
+INFO - Train set - Evaluation Results - SRCC: 0.055881310050309135, KRCC: 0.042032395289910665, PLCC: 0.12876109578877556, RMSE: 0.6350701894572435
+INFO - Epoch 101:
+INFO - Validation set - Evaluation Results - SRCC: -0.08887708402694913, KRCC: -0.06625575171068096, PLCC: 0.06559161663958799, RMSE: 0.628449694792416
+INFO - Train set - Evaluation Results - SRCC: 0.05567304863612009, KRCC: 0.04188326088583752, PLCC: 0.12880572806028961, RMSE: 0.6350664775963548
+INFO - Epoch 102:
+INFO - Validation set - Evaluation Results - SRCC: -0.028078282545064205, KRCC: -0.02303994196462356, PLCC: 0.06559254762052104, RMSE: 0.6284496562534919
+INFO - Train set - Evaluation Results - SRCC: 0.05553350814069369, KRCC: 0.041739416208114874, PLCC: 0.1288539773210785, RMSE: 0.6350624634342623
+INFO - Epoch 103:
+INFO - Validation set - Evaluation Results - SRCC: -0.02750759016670171, KRCC: -0.022591819596372107, PLCC: 0.06559410008015192, RMSE: 0.6284495919797731
+INFO - Train set - Evaluation Results - SRCC: 0.056240148799190565, KRCC: 0.04229902597231196, PLCC: 0.12887014999260482, RMSE: 0.6350611175964871
+INFO - Epoch 104:
+INFO - Validation set - Evaluation Results - SRCC: -0.026614070733441138, KRCC: -0.022049479725390463, PLCC: 0.06560554447255137, RMSE: 0.6284491181343305
+INFO - Train set - Evaluation Results - SRCC: 0.007369956477514272, KRCC: 0.0056034365337461235, PLCC: 0.1290004721975785, RMSE: 0.635050266277691
+INFO - Epoch 105:
+INFO - Validation set - Evaluation Results - SRCC: -0.07979802607954807, KRCC: -0.06026045771379177, PLCC: 0.06561121850143929, RMSE: 0.6284488832111487
+INFO - Train set - Evaluation Results - SRCC: 0.05530298613939534, KRCC: 0.041547089538364335, PLCC: 0.12905470466900537, RMSE: 0.6350457473099272
+INFO - Epoch 106:
+INFO - Validation set - Evaluation Results - SRCC: -0.02776551834163665, KRCC: -0.023096017044003027, PLCC: 0.06561610743379535, RMSE: 0.6284486809330918
+INFO - Train set - Evaluation Results - SRCC: 0.054203473925918864, KRCC: 0.04068020996156464, PLCC: 0.12915353086744696, RMSE: 0.6350375075539436
+INFO - Epoch 107:
+INFO - Validation set - Evaluation Results - SRCC: -0.07960740323041478, KRCC: -0.0600290506210783, PLCC: 0.06562481572127205, RMSE: 0.6284483200294487
+INFO - Train set - Evaluation Results - SRCC: 0.05551780501601012, KRCC: 0.04176588862118125, PLCC: 0.12923750731560796, RMSE: 0.6350305008852115
+INFO - Epoch 108:
+INFO - Validation set - Evaluation Results - SRCC: -0.027010697939668565, KRCC: -0.022109520383181813, PLCC: 0.06562918014133358, RMSE: 0.6284481392485565
+INFO - Train set - Evaluation Results - SRCC: 0.05567219683779451, KRCC: 0.04187550161651019, PLCC: 0.12931906053461173, RMSE: 0.6350236919485039
+INFO - Epoch 109:
+INFO - Validation set - Evaluation Results - SRCC: -0.02683530761797154, KRCC: -0.022252563278185783, PLCC: 0.0656370163052942, RMSE: 0.6284478146317672
+INFO - Train set - Evaluation Results - SRCC: 0.09819137876244684, KRCC: 0.07223533629118492, PLCC: 0.12939554203550593, RMSE: 0.6350173024862679
+INFO - Epoch 110:
+INFO - Validation set - Evaluation Results - SRCC: -0.027470232862959004, KRCC: -0.02265535669578588, PLCC: 0.06563859056818042, RMSE: 0.6284477494125286
+INFO - Train set - Evaluation Results - SRCC: 0.05560863489665844, KRCC: 0.04180847549125621, PLCC: 0.12938483704980064, RMSE: 0.6350181970543544
+INFO - Epoch 111:
+INFO - Validation set - Evaluation Results - SRCC: -0.08976023071015805, KRCC: -0.06700315443102972, PLCC: 0.06563890847810534, RMSE: 0.6284477362418548
+INFO - Train set - Evaluation Results - SRCC: 0.03803866014221867, KRCC: 0.02831252495451418, PLCC: 0.12935075838962456, RMSE: 0.6350210442959024
+INFO - Epoch 114:
+INFO - Validation set - Evaluation Results - SRCC: -0.027473129047366495, KRCC: -0.022726138486426066, PLCC: 0.06564341660490397, RMSE: 0.6284475494769239
+INFO - Train set - Evaluation Results - SRCC: 0.05546197825554485, KRCC: 0.04170629548468301, PLCC: 0.12931814213055154, RMSE: 0.6350237686545047
+INFO - Epoch 116:
+INFO - Validation set - Evaluation Results - SRCC: -0.027830029907166168, KRCC: -0.022949032778468294, PLCC: 0.06564809911806413, RMSE: 0.6284473554549523
+INFO - Train set - Evaluation Results - SRCC: 0.0559354857494639, KRCC: 0.04203346555018416, PLCC: 0.12934478510313874, RMSE: 0.635021543291614
+INFO - Epoch 135:
+INFO - Validation set - Evaluation Results - SRCC: -0.08935497923910504, KRCC: -0.06678587577085678, PLCC: 0.06565061323224608, RMSE: 0.628447251280753
+INFO - Train set - Evaluation Results - SRCC: 0.007612525068892589, KRCC: 0.005845327295372293, PLCC: 0.12941090235169966, RMSE: 0.6350160188097886
+INFO - Epoch 136:
+INFO - Validation set - Evaluation Results - SRCC: -0.02704439940366426, KRCC: -0.02222065740396116, PLCC: 0.06565279901761498, RMSE: 0.6284471607095461
+INFO - Train set - Evaluation Results - SRCC: 0.05652237023796162, KRCC: 0.04248940174986488, PLCC: 0.12948161588186688, RMSE: 0.6350101070869454
+INFO - Epoch 137:
+INFO - Validation set - Evaluation Results - SRCC: -0.027237399873909943, KRCC: -0.02222773573731071, PLCC: 0.06565354348113689, RMSE: 0.6284471298647486
+INFO - Train set - Evaluation Results - SRCC: 0.03916719885088177, KRCC: 0.02919528951395247, PLCC: 0.12949848439169134, RMSE: 0.6350086963740433
+INFO - Epoch 138:
+INFO - Validation set - Evaluation Results - SRCC: -0.02711474083505528, KRCC: -0.022374305058429498, PLCC: 0.06565848606649244, RMSE: 0.628446925048173
+INFO - Train set - Evaluation Results - SRCC: 0.016600859328582147, KRCC: 0.012673289069271516, PLCC: 0.12954155275799328, RMSE: 0.6350050937205177
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.0008522298510733269
+INFO - KRCC_train: 0.0005745633222880685
+INFO - PLCC_train: 0.10755744604177597
+INFO - RMSE_train: 0.6350163729485168
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: -0.029605902838874237
+INFO - KRCC_test: -0.02233803556165911
+INFO - PLCC_test: 0.11655422180265819
+INFO - RMSE_test: 0.6442044326145091
+INFO - ======================================================
+INFO -  -- 2.063521146774292 seconds elapsed...
+
+
+INFO - 10th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.15774000569516153, KRCC: -0.1158177404763504, PLCC: 0.20103287850023077, RMSE: 0.6181212812076474
+INFO - Train set - Evaluation Results - SRCC: -0.012044895020893297, KRCC: -0.008445126551498709, PLCC: 0.1015612897832652, RMSE: 0.6354488068084526
+INFO - Epoch 3:
+INFO - Validation set - Evaluation Results - SRCC: -0.012410797571832059, KRCC: -0.0033035324254746907, PLCC: 0.20165323838824253, RMSE: 0.6180408253034293
+INFO - Train set - Evaluation Results - SRCC: 0.029951409389601877, KRCC: 0.02113505708593351, PLCC: 0.10106918303181726, RMSE: 0.6354808183280072
+INFO - Epoch 9:
+INFO - Validation set - Evaluation Results - SRCC: 0.047061593733263844, KRCC: 0.03059113932796591, PLCC: 0.21294888958353425, RMSE: 0.616530423993828
+INFO - Train set - Evaluation Results - SRCC: -0.03246383920882301, KRCC: -0.02385336515427692, PLCC: 0.12159429479812761, RMSE: 0.6340120003088933
+INFO - Epoch 10:
+INFO - Validation set - Evaluation Results - SRCC: 0.13067772128901725, KRCC: 0.09439325573003927, PLCC: 0.23429163647813123, RMSE: 0.6134404114722019
+INFO - Train set - Evaluation Results - SRCC: -0.026743635275687228, KRCC: -0.018815109044444053, PLCC: 0.056145141437630136, RMSE: 0.6377440542183911
+INFO - Epoch 11:
+INFO - Validation set - Evaluation Results - SRCC: 0.05682553111229183, KRCC: 0.03605696897465382, PLCC: 0.23693464001919523, RMSE: 0.6130360855466738
+INFO - Train set - Evaluation Results - SRCC: -0.040184035680707934, KRCC: -0.029134433733643193, PLCC: 0.0669566788038834, RMSE: 0.6373181768496924
+INFO - Epoch 12:
+INFO - Validation set - Evaluation Results - SRCC: 0.1355478474571576, KRCC: 0.09864829610025777, PLCC: 0.23948875789295038, RMSE: 0.6126407902643347
+INFO - Train set - Evaluation Results - SRCC: -0.009214025963088889, KRCC: -0.006934863356619144, PLCC: 0.07302757539129871, RMSE: 0.6370511039040433
+INFO - Epoch 13:
+INFO - Validation set - Evaluation Results - SRCC: 0.13788169896139246, KRCC: 0.10030103646912716, PLCC: 0.24197857635701286, RMSE: 0.6122511172512587
+INFO - Train set - Evaluation Results - SRCC: 0.02300207887776286, KRCC: 0.016366538281914537, PLCC: 0.0669620168934095, RMSE: 0.6373179480247817
+INFO - Epoch 14:
+INFO - Validation set - Evaluation Results - SRCC: 0.13810261171472324, KRCC: 0.10045313907796365, PLCC: 0.24305848438711947, RMSE: 0.6120807735443768
+INFO - Train set - Evaluation Results - SRCC: -0.006653596670939393, KRCC: -0.004989809570912332, PLCC: 0.06929433257419257, RMSE: 0.6372162162506491
+INFO - Epoch 15:
+INFO - Validation set - Evaluation Results - SRCC: 0.13936230034372896, KRCC: 0.10107950305654896, PLCC: 0.24483373478563863, RMSE: 0.611798994717606
+INFO - Train set - Evaluation Results - SRCC: -0.0067047281365092805, KRCC: -0.00516252656993473, PLCC: 0.05535202741274117, RMSE: 0.6377723406028457
+INFO - Epoch 16:
+INFO - Validation set - Evaluation Results - SRCC: 0.13971655949082348, KRCC: 0.10168852853230191, PLCC: 0.2489832047793044, RMSE: 0.6111318494916007
+INFO - Train set - Evaluation Results - SRCC: -0.00667198208089745, KRCC: -0.0051364210150083136, PLCC: 0.060499170053577925, RMSE: 0.6375815750188136
+INFO - Epoch 17:
+INFO - Validation set - Evaluation Results - SRCC: 0.14045731329186456, KRCC: 0.10248386291377153, PLCC: 0.2517204850417372, RMSE: 0.6106852096404027
+INFO - Train set - Evaluation Results - SRCC: -0.036051148847840234, KRCC: -0.02580494713971076, PLCC: 0.06426459263226489, RMSE: 0.637431242944171
+INFO - Epoch 18:
+INFO - Validation set - Evaluation Results - SRCC: 0.13936786365387943, KRCC: 0.10149811880635057, PLCC: 0.2540246463449317, RMSE: 0.6103051989536026
+INFO - Train set - Evaluation Results - SRCC: -0.004004672660302041, KRCC: -0.0026953399942362516, PLCC: 0.09362580043984065, RMSE: 0.6359458664707226
+INFO - Epoch 19:
+INFO - Validation set - Evaluation Results - SRCC: 0.14084960208512987, KRCC: 0.10244606654703696, PLCC: 0.25818152574999775, RMSE: 0.6096102608122234
+INFO - Train set - Evaluation Results - SRCC: -0.0031414280977912286, KRCC: -0.0019820179312513516, PLCC: 0.09894389426836661, RMSE: 0.6356172646208712
+INFO - Epoch 20:
+INFO - Validation set - Evaluation Results - SRCC: 0.1412855291217927, KRCC: 0.10318975984825082, PLCC: 0.2624063334688257, RMSE: 0.6088915761924453
+INFO - Train set - Evaluation Results - SRCC: -0.003379009818004137, KRCC: -0.0022294436297030755, PLCC: 0.10198253056941357, RMSE: 0.635421280414483
+INFO - Epoch 21:
+INFO - Validation set - Evaluation Results - SRCC: 0.14253680057822882, KRCC: 0.10450353626153756, PLCC: 0.26610842570349447, RMSE: 0.6082515079503767
+INFO - Train set - Evaluation Results - SRCC: -0.004633587457769253, KRCC: -0.003266881639374542, PLCC: 0.10372078934658738, RMSE: 0.6353064737281634
+INFO - Epoch 22:
+INFO - Validation set - Evaluation Results - SRCC: 0.14413605319597225, KRCC: 0.10556075198072085, PLCC: 0.26893451996604606, RMSE: 0.60775639697079
+INFO - Train set - Evaluation Results - SRCC: -0.006882569895459841, KRCC: -0.00490238616771644, PLCC: 0.10465877658960321, RMSE: 0.6352437077393723
+INFO - Epoch 23:
+INFO - Validation set - Evaluation Results - SRCC: 0.06399857485295221, KRCC: 0.0422610636037215, PLCC: 0.27121996167225093, RMSE: 0.6073518800772775
+INFO - Train set - Evaluation Results - SRCC: -0.006905402887546247, KRCC: -0.0048466255982476, PLCC: 0.10520913332198584, RMSE: 0.6352066143146782
+INFO - Epoch 24:
+INFO - Validation set - Evaluation Results - SRCC: 0.20609304115986332, KRCC: 0.1516567974349438, PLCC: 0.2719821375478857, RMSE: 0.6072161554651331
+INFO - Train set - Evaluation Results - SRCC: -0.020419920960407907, KRCC: -0.014009429715677198, PLCC: 0.1054438337952695, RMSE: 0.635190735984005
+INFO - Epoch 25:
+INFO - Validation set - Evaluation Results - SRCC: 0.06455636862777386, KRCC: 0.04266320584925524, PLCC: 0.2733242704414552, RMSE: 0.6069761549236886
+INFO - Train set - Evaluation Results - SRCC: -0.028111902769735974, KRCC: -0.020615429579684937, PLCC: 0.1057048461003061, RMSE: 0.6351730355098202
+INFO - Epoch 55:
+INFO - Validation set - Evaluation Results - SRCC: 0.14297465442206453, KRCC: 0.10501235248694876, PLCC: 0.27351012604630737, RMSE: 0.6069428195502519
+INFO - Train set - Evaluation Results - SRCC: -0.014058146276055767, KRCC: -0.010093018519921428, PLCC: 0.10689145677280515, RMSE: 0.6350920075438724
+INFO - Epoch 56:
+INFO - Validation set - Evaluation Results - SRCC: 0.14345160905440718, KRCC: 0.10527050354823704, PLCC: 0.27581377677290864, RMSE: 0.6065275983916484
+INFO - Train set - Evaluation Results - SRCC: -0.026011347034401732, KRCC: -0.01809414734808641, PLCC: 0.10703169345860504, RMSE: 0.6350823710498336
+INFO - Epoch 57:
+INFO - Validation set - Evaluation Results - SRCC: 0.14095298917339638, KRCC: 0.10284787866563969, PLCC: 0.27926699960865425, RMSE: 0.605898107746261
+INFO - Train set - Evaluation Results - SRCC: -0.03475679074714831, KRCC: -0.0254708173364648, PLCC: 0.10719030158099321, RMSE: 0.635071456699524
+INFO - Epoch 58:
+INFO - Validation set - Evaluation Results - SRCC: 0.1384270050082685, KRCC: 0.09963559124957613, PLCC: 0.2819031856336241, RMSE: 0.6054118360980739
+INFO - Train set - Evaluation Results - SRCC: -0.034918148383978644, KRCC: -0.025468453174959382, PLCC: 0.10727509071287192, RMSE: 0.6350656153981343
+INFO - Epoch 59:
+INFO - Validation set - Evaluation Results - SRCC: 0.06218794255625112, KRCC: 0.04025995074489511, PLCC: 0.28613009186967303, RMSE: 0.6046217715971699
+INFO - Train set - Evaluation Results - SRCC: -0.016910311388619845, KRCC: -0.012166399979484328, PLCC: 0.10737535311465846, RMSE: 0.6350587020423538
+INFO - Epoch 60:
+INFO - Validation set - Evaluation Results - SRCC: 0.1281498672595443, KRCC: 0.09284276777279193, PLCC: 0.2930393026347312, RMSE: 0.6033027319743469
+INFO - Train set - Evaluation Results - SRCC: 0.02081727475243254, KRCC: 0.015752555748436835, PLCC: 0.10747733027199913, RMSE: 0.6350516637655015
+INFO - Epoch 61:
+INFO - Validation set - Evaluation Results - SRCC: 0.25322476932446203, KRCC: 0.19093610056014065, PLCC: 0.3116531819762771, RMSE: 0.5995769893543427
+INFO - Train set - Evaluation Results - SRCC: 0.09187550759086503, KRCC: 0.06655153333570869, PLCC: 0.10756350241628501, RMSE: 0.6350457110557144
+INFO - Epoch 63:
+INFO - Validation set - Evaluation Results - SRCC: 0.25266101634421456, KRCC: 0.190351341063663, PLCC: 0.3132961766840755, RMSE: 0.5992359589075418
+INFO - Train set - Evaluation Results - SRCC: 0.05123001016346899, KRCC: 0.038051970877062725, PLCC: 0.10753841282256854, RMSE: 0.6350474447251687
+INFO - Epoch 65:
+INFO - Validation set - Evaluation Results - SRCC: 0.2703336645385326, KRCC: 0.20374983379055162, PLCC: 0.3230155504241491, RMSE: 0.5971777454261613
+INFO - Train set - Evaluation Results - SRCC: 0.051698143201152895, KRCC: 0.03825761846479887, PLCC: 0.10756100007720604, RMSE: 0.635045883984128
+INFO - Epoch 77:
+INFO - Validation set - Evaluation Results - SRCC: 0.3251273819945453, KRCC: 0.24167481323816206, PLCC: 0.3242201643669528, RMSE: 0.5969177684545047
+INFO - Train set - Evaluation Results - SRCC: 0.019164293005494694, KRCC: 0.014227452204399816, PLCC: 0.1074563393533448, RMSE: 0.6350531130777736
+INFO - Epoch 130:
+INFO - Validation set - Evaluation Results - SRCC: 0.2752955368861062, KRCC: 0.2077966481369412, PLCC: 0.33028041449696943, RMSE: 0.595593421706726
+INFO - Train set - Evaluation Results - SRCC: 0.0554946737240057, KRCC: 0.04122681448738572, PLCC: 0.10731435453608917, RMSE: 0.6350629088299703
+INFO - Epoch 131:
+INFO - Validation set - Evaluation Results - SRCC: 0.2726915700519185, KRCC: 0.20323598466376658, PLCC: 0.33549441973670674, RMSE: 0.5944319565036075
+INFO - Train set - Evaluation Results - SRCC: 0.056076139133605686, KRCC: 0.04160258663662206, PLCC: 0.10734012205335458, RMSE: 0.6350611320550273
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.10087177634050147
+INFO - KRCC_train: 0.07506797778272781
+INFO - PLCC_train: 0.1090243510301268
+INFO - RMSE_train: 0.6338085866296975
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: 0.03937993493388318
+INFO - KRCC_test: 0.02894636571080069
+INFO - PLCC_test: 0.0958296744540223
+INFO - RMSE_test: 0.6500805395372443
+INFO - ======================================================
+INFO -  -- 1.3179702758789062 seconds elapsed...
+
+
+INFO - 11th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.09796091716087446, KRCC: -0.06902529225208502, PLCC: 0.19852310901142614, RMSE: 0.6277515863476768
+INFO - Train set - Evaluation Results - SRCC: 0.03709695003242087, KRCC: 0.02676653316937229, PLCC: 0.04022741118018477, RMSE: 0.6461319021117303
+INFO - Epoch 12:
+INFO - Validation set - Evaluation Results - SRCC: 0.02947061031432928, KRCC: 0.01926059326112289, PLCC: 0.19918311616670215, RMSE: 0.6276658112718531
+INFO - Train set - Evaluation Results - SRCC: -0.002285916231225462, KRCC: -0.001347262759291578, PLCC: 0.06094872161682442, RMSE: 0.6454531421890107
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.025514342914097425
+INFO - KRCC_train: 0.01847924092245357
+INFO - PLCC_train: 0.1066853641200394
+INFO - RMSE_train: 0.6421394241798641
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: -0.047145317213137174
+INFO - KRCC_test: -0.03509518299358774
+INFO - PLCC_test: 0.08806487901705437
+INFO - RMSE_test: 0.6159022066641435
+INFO - ======================================================
+INFO -  -- 1.253978967666626 seconds elapsed...
+
+
+INFO - 12th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: 0.054118815041088585, KRCC: 0.03965819235198514, PLCC: 0.07399580631165945, RMSE: 0.6324604262365704
+INFO - Train set - Evaluation Results - SRCC: -0.010637761303596565, KRCC: -0.008821312290532228, PLCC: 0.09799326446287318, RMSE: 0.6410681953471024
+INFO - Epoch 4:
+INFO - Validation set - Evaluation Results - SRCC: 0.043159098729753986, KRCC: 0.03259830551167932, PLCC: 0.0910510819906365, RMSE: 0.6315647284323607
+INFO - Train set - Evaluation Results - SRCC: -0.043920450738328065, KRCC: -0.033260072981286304, PLCC: 0.12166085624119283, RMSE: 0.6393834681746594
+INFO - Epoch 5:
+INFO - Validation set - Evaluation Results - SRCC: 0.004774267917733953, KRCC: 0.0038147472201875963, PLCC: 0.09105108202015978, RMSE: 0.6315647283658227
+INFO - Train set - Evaluation Results - SRCC: -0.04479731482847989, KRCC: -0.0338836262005674, PLCC: 0.11494649280631297, RMSE: 0.639898774777353
+INFO - Epoch 7:
+INFO - Validation set - Evaluation Results - SRCC: -0.08090972085649391, KRCC: -0.05944018193567944, PLCC: 0.09105108202036566, RMSE: 0.6315647283646464
+INFO - Train set - Evaluation Results - SRCC: -0.03921228727084593, KRCC: -0.028317345731096528, PLCC: 0.10932717458290817, RMSE: 0.6403072644152531
+INFO - Epoch 8:
+INFO - Validation set - Evaluation Results - SRCC: -0.08063032637319513, KRCC: -0.05916614914312263, PLCC: 0.09105108202042962, RMSE: 0.6315647283646427
+INFO - Train set - Evaluation Results - SRCC: -0.01009300747801391, KRCC: -0.007352684173569484, PLCC: 0.1093271745829082, RMSE: 0.6403072644152531
+INFO - Epoch 10:
+INFO - Validation set - Evaluation Results - SRCC: -0.03162335774951755, KRCC: -0.024041130277376702, PLCC: 0.09109282173728664, RMSE: 0.6315623076341763
+INFO - Train set - Evaluation Results - SRCC: -0.009834929079987216, KRCC: -0.006372157638139701, PLCC: 0.09641427923942456, RMSE: 0.6411675339443198
+INFO - Epoch 11:
+INFO - Validation set - Evaluation Results - SRCC: -0.029094586683117152, KRCC: -0.022293465747739046, PLCC: 0.09150349820692699, RMSE: 0.6315384293349572
+INFO - Train set - Evaluation Results - SRCC: 0.03181557980893709, KRCC: 0.024142641925512694, PLCC: 0.09659018263764409, RMSE: 0.6411565477485962
+INFO - Epoch 12:
+INFO - Validation set - Evaluation Results - SRCC: -0.027948466452989314, KRCC: -0.021218636732974624, PLCC: 0.09153291845662241, RMSE: 0.6315367145283685
+INFO - Train set - Evaluation Results - SRCC: 0.0321964851230023, KRCC: 0.024444847298578074, PLCC: 0.09658679625237143, RMSE: 0.6411567596535429
+INFO - Epoch 14:
+INFO - Validation set - Evaluation Results - SRCC: -0.08294031065997379, KRCC: -0.062099836293118375, PLCC: 0.09212315407531174, RMSE: 0.63150219495042
+INFO - Train set - Evaluation Results - SRCC: 0.03292960511090532, KRCC: 0.024853546045969496, PLCC: 0.07539227983078366, RMSE: 0.6423351924388562
+INFO - Epoch 15:
+INFO - Validation set - Evaluation Results - SRCC: -0.023383390815227036, KRCC: -0.01807449807518647, PLCC: 0.09285234414016282, RMSE: 0.6314592397399197
+INFO - Train set - Evaluation Results - SRCC: 0.03457195857592906, KRCC: 0.026173571183745165, PLCC: 0.10932717458290817, RMSE: 0.6403072644152531
+INFO - Epoch 16:
+INFO - Validation set - Evaluation Results - SRCC: -0.024321084284955722, KRCC: -0.01872327871987159, PLCC: 0.09320412632153369, RMSE: 0.63143839478174
+INFO - Train set - Evaluation Results - SRCC: 0.025795678244029646, KRCC: 0.01951305422794114, PLCC: 0.11111996505309289, RMSE: 0.640179191286829
+INFO - Epoch 17:
+INFO - Validation set - Evaluation Results - SRCC: -0.024628017457750926, KRCC: -0.018808149288570424, PLCC: 0.09365600240042388, RMSE: 0.6314115019753818
+INFO - Train set - Evaluation Results - SRCC: 0.03516418045156298, KRCC: 0.026576153343581207, PLCC: 0.11111996505309293, RMSE: 0.640179191286829
+INFO - Epoch 18:
+INFO - Validation set - Evaluation Results - SRCC: -0.022830755060991956, KRCC: -0.018441864692740336, PLCC: 0.09482349159098429, RMSE: 0.6313414130083859
+INFO - Train set - Evaluation Results - SRCC: 0.036650498142493194, KRCC: 0.027573893287863346, PLCC: 0.11543697758699256, RMSE: 0.6398621354901778
+INFO - Epoch 19:
+INFO - Validation set - Evaluation Results - SRCC: -0.022951637049542492, KRCC: -0.018479158693808312, PLCC: 0.09644969874143663, RMSE: 0.6312423248752784
+INFO - Train set - Evaluation Results - SRCC: 0.04194515742134657, KRCC: 0.03131046854796104, PLCC: 0.12685687362285733, RMSE: 0.6389643099848136
+INFO - Epoch 20:
+INFO - Validation set - Evaluation Results - SRCC: -0.021645498835604956, KRCC: -0.01695096570725869, PLCC: 0.09796580734744173, RMSE: 0.6311484136972149
+INFO - Train set - Evaluation Results - SRCC: 0.07972011684075397, KRCC: 0.05803654383186051, PLCC: 0.13021238666889437, RMSE: 0.6386841560634241
+INFO - Epoch 21:
+INFO - Validation set - Evaluation Results - SRCC: 0.03492476388156989, KRCC: 0.02564001122077683, PLCC: 0.09936117024291474, RMSE: 0.6310606744098931
+INFO - Train set - Evaluation Results - SRCC: 0.04307977356083362, KRCC: 0.032603656311581394, PLCC: 0.12243917222337787, RMSE: 0.6393218154431112
+INFO - Epoch 22:
+INFO - Validation set - Evaluation Results - SRCC: 0.035797579260240846, KRCC: 0.02604970446908625, PLCC: 0.10051920443808224, RMSE: 0.6309869064860533
+INFO - Train set - Evaluation Results - SRCC: 0.043244367202018234, KRCC: 0.03272227452454309, PLCC: 0.11955513238775882, RMSE: 0.639548269136313
+INFO - Epoch 23:
+INFO - Validation set - Evaluation Results - SRCC: -0.020761061712244296, KRCC: -0.016357632651600836, PLCC: 0.1013494091913846, RMSE: 0.6309334904741732
+INFO - Train set - Evaluation Results - SRCC: 0.04298821915990497, KRCC: 0.032498509974329674, PLCC: 0.12159133163858706, RMSE: 0.6393889560092396
+INFO - Epoch 24:
+INFO - Validation set - Evaluation Results - SRCC: -0.02021862525772368, KRCC: -0.016072330410908383, PLCC: 0.10152957844526662, RMSE: 0.6309218394584364
+INFO - Train set - Evaluation Results - SRCC: 0.04291904172945342, KRCC: 0.03246804618502082, PLCC: 0.12558866944028635, RMSE: 0.6390682574664488
+INFO - Epoch 25:
+INFO - Validation set - Evaluation Results - SRCC: -0.02038568744070198, KRCC: -0.016746008830664686, PLCC: 0.10192870114674382, RMSE: 0.6308959553144339
+INFO - Train set - Evaluation Results - SRCC: 0.07205307399541332, KRCC: 0.05253087984103829, PLCC: 0.12558866944028635, RMSE: 0.6390682574664489
+INFO - Epoch 26:
+INFO - Validation set - Evaluation Results - SRCC: -0.020901383401823743, KRCC: -0.01689175943206127, PLCC: 0.10258664221187848, RMSE: 0.6308530617378905
+INFO - Train set - Evaluation Results - SRCC: 0.04351789681052218, KRCC: 0.03293246461323377, PLCC: 0.12558866943751032, RMSE: 0.6390682574666755
+INFO - Epoch 27:
+INFO - Validation set - Evaluation Results - SRCC: -0.021323080650829447, KRCC: -0.016936561825002545, PLCC: 0.10319813000057881, RMSE: 0.630812946581361
+INFO - Train set - Evaluation Results - SRCC: 0.04405989299314384, KRCC: 0.033299889148253985, PLCC: 0.1290885223411004, RMSE: 0.6387788165230963
+INFO - Epoch 28:
+INFO - Validation set - Evaluation Results - SRCC: -0.0013551525740935666, KRCC: -0.001945521258034919, PLCC: 0.10377241276258597, RMSE: 0.6307750527634988
+INFO - Train set - Evaluation Results - SRCC: 0.04409439220312273, KRCC: 0.0333780884464026, PLCC: 0.1290885223411004, RMSE: 0.6387788165230963
+INFO - Epoch 29:
+INFO - Validation set - Evaluation Results - SRCC: -0.03911189724428505, KRCC: -0.029624309263389506, PLCC: 0.10419629136891097, RMSE: 0.6307469471265873
+INFO - Train set - Evaluation Results - SRCC: 0.04345988277158797, KRCC: 0.03285296943818939, PLCC: 0.1290885223411004, RMSE: 0.6387788165230962
+INFO - Epoch 30:
+INFO - Validation set - Evaluation Results - SRCC: -0.019276637905876828, KRCC: -0.015008931704539045, PLCC: 0.1046956901014301, RMSE: 0.6307136870582324
+INFO - Train set - Evaluation Results - SRCC: 0.04422498832786765, KRCC: 0.033511134500344576, PLCC: 0.12933630187984285, RMSE: 0.6387580183474105
+INFO - Epoch 31:
+INFO - Validation set - Evaluation Results - SRCC: -0.01984480228167652, KRCC: -0.015667752653648493, PLCC: 0.10518495311134318, RMSE: 0.630680942389254
+INFO - Train set - Evaluation Results - SRCC: 0.0013270317602713977, KRCC: 0.0019314873059733833, PLCC: 0.12560438029143423, RMSE: 0.6390669762311281
+INFO - Epoch 32:
+INFO - Validation set - Evaluation Results - SRCC: -0.02006086406241959, KRCC: -0.015130100275463236, PLCC: 0.10563068269212907, RMSE: 0.6306509786430293
+INFO - Train set - Evaluation Results - SRCC: 0.04438700181269899, KRCC: 0.03378451174069607, PLCC: 0.12540837834475793, RMSE: 0.6390829487475277
+INFO - Epoch 33:
+INFO - Validation set - Evaluation Results - SRCC: -0.019979616368606498, KRCC: -0.015585962814491688, PLCC: 0.10585418549882061, RMSE: 0.6306359056183817
+INFO - Train set - Evaluation Results - SRCC: 0.04417886782114294, KRCC: 0.033611285223105296, PLCC: 0.12540837592086176, RMSE: 0.6390829489524403
+INFO - Epoch 34:
+INFO - Validation set - Evaluation Results - SRCC: -0.019073746278702293, KRCC: -0.01505858003804619, PLCC: 0.10648845718908298, RMSE: 0.630592955010201
+INFO - Train set - Evaluation Results - SRCC: 0.04481346038556217, KRCC: 0.03393209764984219, PLCC: 0.12456457636674656, RMSE: 0.6391514221760815
+INFO - Epoch 35:
+INFO - Validation set - Evaluation Results - SRCC: -0.019613205118230632, KRCC: -0.015377456701709188, PLCC: 0.10710456253613448, RMSE: 0.6305509861246988
+INFO - Train set - Evaluation Results - SRCC: 0.04490456047310195, KRCC: 0.03391582467317276, PLCC: 0.12456457636674657, RMSE: 0.6391514221760815
+INFO - Epoch 36:
+INFO - Validation set - Evaluation Results - SRCC: 0.017854234361875554, KRCC: 0.012816404892338281, PLCC: 0.10780199757025599, RMSE: 0.630503181602798
+INFO - Train set - Evaluation Results - SRCC: 0.04491447450477076, KRCC: 0.03400816903013182, PLCC: 0.13430401708177253, RMSE: 0.6383324729956673
+INFO - Epoch 37:
+INFO - Validation set - Evaluation Results - SRCC: -0.019492739745351012, KRCC: -0.015062839116507335, PLCC: 0.10837874073360557, RMSE: 0.6304634120190264
+INFO - Train set - Evaluation Results - SRCC: 0.044423433919626804, KRCC: 0.0335375795232157, PLCC: 0.13430401708177292, RMSE: 0.6383324729956663
+INFO - Epoch 38:
+INFO - Validation set - Evaluation Results - SRCC: -0.01976804885553534, KRCC: -0.01567599533585189, PLCC: 0.10881915590147731, RMSE: 0.6304328986757529
+INFO - Train set - Evaluation Results - SRCC: 0.03558582210190559, KRCC: 0.02682239413556084, PLCC: 0.13430401708177286, RMSE: 0.6383324729956754
+INFO - Epoch 39:
+INFO - Validation set - Evaluation Results - SRCC: -0.020037440935307595, KRCC: -0.01534929965617913, PLCC: 0.10991365872060035, RMSE: 0.6303565258160984
+INFO - Train set - Evaluation Results - SRCC: 0.0447914855533257, KRCC: 0.03372232117775759, PLCC: 0.13430401708177292, RMSE: 0.6383324729956663
+INFO - Epoch 40:
+INFO - Validation set - Evaluation Results - SRCC: 0.03674519125621446, KRCC: 0.027293270676942216, PLCC: 0.11086289112839148, RMSE: 0.6302896631269709
+INFO - Train set - Evaluation Results - SRCC: 0.04578924219853936, KRCC: 0.03442025209718658, PLCC: 0.1343040170817729, RMSE: 0.6383324729956663
+INFO - Epoch 41:
+INFO - Validation set - Evaluation Results - SRCC: -0.01862898527656798, KRCC: -0.01432564030168111, PLCC: 0.11189325238531796, RMSE: 0.6302164270526578
+INFO - Train set - Evaluation Results - SRCC: 0.07467710587996061, KRCC: 0.05422332457646246, PLCC: 0.13048597918269567, RMSE: 0.6386609856777772
+INFO - Epoch 42:
+INFO - Validation set - Evaluation Results - SRCC: -0.017006286693573697, KRCC: -0.012610565803179758, PLCC: 0.11261625714938409, RMSE: 0.6301646274985448
+INFO - Train set - Evaluation Results - SRCC: 0.04527424890798405, KRCC: 0.03415685858974593, PLCC: 0.13571312240266004, RMSE: 0.6382087931506222
+INFO - Epoch 43:
+INFO - Validation set - Evaluation Results - SRCC: 0.03863905852089729, KRCC: 0.028794071236809018, PLCC: 0.1139282946960377, RMSE: 0.6300697640092089
+INFO - Train set - Evaluation Results - SRCC: 0.045415683305251864, KRCC: 0.034249927865667947, PLCC: 0.13192046543530295, RMSE: 0.6385386900045806
+INFO - Epoch 44:
+INFO - Validation set - Evaluation Results - SRCC: -0.018048598922443832, KRCC: -0.013879981116853428, PLCC: 0.11404616379838398, RMSE: 0.6300611872255136
+INFO - Train set - Evaluation Results - SRCC: 0.04527854054229663, KRCC: 0.03420989866195508, PLCC: 0.13571312240266004, RMSE: 0.6382087931506222
+INFO - Epoch 47:
+INFO - Validation set - Evaluation Results - SRCC: -0.018316331644166985, KRCC: -0.01387660877881211, PLCC: 0.11511447916017321, RMSE: 0.6299830416622401
+INFO - Train set - Evaluation Results - SRCC: 0.010470469048084487, KRCC: 0.008289825275688714, PLCC: 0.13280052084577681, RMSE: 0.6384629882537949
+INFO - Epoch 48:
+INFO - Validation set - Evaluation Results - SRCC: 0.039823350378674696, KRCC: 0.029585683116854104, PLCC: 0.11537058829504293, RMSE: 0.6299641977599398
+INFO - Train set - Evaluation Results - SRCC: 0.04524371654669204, KRCC: 0.03412524868424657, PLCC: 0.13279696552188036, RMSE: 0.6384632951106795
+INFO - Epoch 49:
+INFO - Validation set - Evaluation Results - SRCC: -0.01877634838609348, KRCC: -0.01408530929820885, PLCC: 0.11547511500962265, RMSE: 0.6299564950347216
+INFO - Train set - Evaluation Results - SRCC: 0.04508448917055143, KRCC: 0.03400306443678769, PLCC: 0.13192046543531438, RMSE: 0.6385386900045794
+INFO - Epoch 50:
+INFO - Validation set - Evaluation Results - SRCC: -0.018548045090223765, KRCC: -0.01381716901168877, PLCC: 0.11567970694493962, RMSE: 0.6299413973130752
+INFO - Train set - Evaluation Results - SRCC: 0.04508406122195646, KRCC: 0.03398460767580507, PLCC: 0.13280052115620206, RMSE: 0.6384629882266781
+INFO - Epoch 51:
+INFO - Validation set - Evaluation Results - SRCC: -0.01899564820962314, KRCC: -0.014616979460435324, PLCC: 0.11634709285290872, RMSE: 0.6298919600462874
+INFO - Train set - Evaluation Results - SRCC: 0.010490524793309707, KRCC: 0.008372383413545709, PLCC: 0.1328005211364874, RMSE: 0.6384629882284004
+INFO - Epoch 52:
+INFO - Validation set - Evaluation Results - SRCC: -8.166161643110484e-05, KRCC: 6.488795700572155e-05, PLCC: 0.11643767004245278, RMSE: 0.6298852284564356
+INFO - Train set - Evaluation Results - SRCC: 0.07450899497823062, KRCC: 0.05422652963300372, PLCC: 0.1328005211561097, RMSE: 0.6384629882266862
+INFO - Epoch 63:
+INFO - Validation set - Evaluation Results - SRCC: -0.018776242773497608, KRCC: -0.013996443426843096, PLCC: 0.11673306324049923, RMSE: 0.6298632374813417
+INFO - Train set - Evaluation Results - SRCC: 0.045398818691458134, KRCC: 0.03420266599028466, PLCC: 0.13280051895129452, RMSE: 0.6384629884193226
+INFO - Epoch 78:
+INFO - Validation set - Evaluation Results - SRCC: -0.01904552073113836, KRCC: -0.014205005715865087, PLCC: 0.11706987521570347, RMSE: 0.6298380942184043
+INFO - Train set - Evaluation Results - SRCC: 0.045238830421994114, KRCC: 0.034166988743064584, PLCC: 0.1391177768976231, RMSE: 0.6379045306949331
+INFO - Epoch 79:
+INFO - Validation set - Evaluation Results - SRCC: -0.019275622918924363, KRCC: -0.014537868369515592, PLCC: 0.1175708209653239, RMSE: 0.6298005628274853
+INFO - Train set - Evaluation Results - SRCC: 0.045487054556540285, KRCC: 0.034420141598687774, PLCC: 0.13911777689471005, RMSE: 0.6379045306995722
+INFO - Epoch 80:
+INFO - Validation set - Evaluation Results - SRCC: -0.03685273848826366, KRCC: -0.027292752326895944, PLCC: 0.1180287508775448, RMSE: 0.6297661113031203
+INFO - Train set - Evaluation Results - SRCC: 0.03572335491959701, KRCC: 0.026954807507688708, PLCC: 0.13911777689762306, RMSE: 0.6379045306949331
+INFO - Epoch 81:
+INFO - Validation set - Evaluation Results - SRCC: -0.019339593016462164, KRCC: -0.014821417139259807, PLCC: 0.11828199130291933, RMSE: 0.6297470017362712
+INFO - Train set - Evaluation Results - SRCC: 0.04578753372832968, KRCC: 0.03460009164724155, PLCC: 0.13911777689761679, RMSE: 0.6379045306949338
+INFO - Epoch 82:
+INFO - Validation set - Evaluation Results - SRCC: -0.0194150898702954, KRCC: -0.014742106252013906, PLCC: 0.11863823977192003, RMSE: 0.629720047396261
+INFO - Train set - Evaluation Results - SRCC: 0.04566720531899775, KRCC: 0.03453617248566533, PLCC: 0.1391177768976229, RMSE: 0.6379045306949331
+INFO - Epoch 83:
+INFO - Validation set - Evaluation Results - SRCC: -0.020881961167113383, KRCC: -0.01604120758600812, PLCC: 0.11865185824824966, RMSE: 0.629719015563886
+INFO - Train set - Evaluation Results - SRCC: 0.08373688132868512, KRCC: 0.06114919721896731, PLCC: 0.1391177768976231, RMSE: 0.6379045306949331
+INFO - Epoch 85:
+INFO - Validation set - Evaluation Results - SRCC: -0.01985641658492461, KRCC: -0.015542582609589321, PLCC: 0.11894704286527617, RMSE: 0.6296966170056669
+INFO - Train set - Evaluation Results - SRCC: 0.045360987637068945, KRCC: 0.03436263205772914, PLCC: 0.1391177768976231, RMSE: 0.6379045306949331
+INFO - Epoch 90:
+INFO - Validation set - Evaluation Results - SRCC: -0.018901057183652505, KRCC: -0.014599241118727546, PLCC: 0.11905599955743595, RMSE: 0.6296883349223593
+INFO - Train set - Evaluation Results - SRCC: 0.045925928454216, KRCC: 0.03474509947094944, PLCC: 0.13911777689761934, RMSE: 0.6379045306949335
+INFO - Epoch 91:
+INFO - Validation set - Evaluation Results - SRCC: -0.01947985431741619, KRCC: -0.015019879583398062, PLCC: 0.11933679435156105, RMSE: 0.6296669560356122
+INFO - Train set - Evaluation Results - SRCC: 0.045806477724974884, KRCC: 0.03455566747945188, PLCC: 0.13911777689598417, RMSE: 0.637904530695083
+INFO - Epoch 92:
+INFO - Validation set - Evaluation Results - SRCC: -0.0196130321991794, KRCC: -0.015203512957918611, PLCC: 0.11975640982889316, RMSE: 0.6296349125810571
+INFO - Train set - Evaluation Results - SRCC: 0.04590811740063609, KRCC: 0.03466298756884558, PLCC: 0.1391177768976231, RMSE: 0.6379045306949331
+INFO - Epoch 94:
+INFO - Validation set - Evaluation Results - SRCC: -0.018965204263007646, KRCC: -0.014544931301933642, PLCC: 0.11977277806327927, RMSE: 0.6296336604438955
+INFO - Train set - Evaluation Results - SRCC: 0.04548103376638709, KRCC: 0.03432317714705648, PLCC: 0.1391177768976231, RMSE: 0.6379045306949331
+INFO - Epoch 95:
+INFO - Validation set - Evaluation Results - SRCC: -0.019325103088881298, KRCC: -0.01475525231021953, PLCC: 0.11978372509807952, RMSE: 0.6296328236247861
+INFO - Train set - Evaluation Results - SRCC: 0.04555511536753545, KRCC: 0.03433021440930903, PLCC: 0.1391177768976231, RMSE: 0.6379045306949331
+INFO - Epoch 106:
+INFO - Validation set - Evaluation Results - SRCC: -0.05530233999560813, KRCC: -0.04090781632901764, PLCC: 0.11984947895486185, RMSE: 0.6296277902434015
+INFO - Train set - Evaluation Results - SRCC: 0.04587531296180263, KRCC: 0.034625518304756804, PLCC: 0.1391177768976231, RMSE: 0.6379045306949331
+INFO - Epoch 107:
+INFO - Validation set - Evaluation Results - SRCC: 0.01876860865106637, KRCC: 0.013298129318381929, PLCC: 0.12002846704194989, RMSE: 0.6296140767189392
+INFO - Train set - Evaluation Results - SRCC: 0.046166123597515235, KRCC: 0.034980139180611346, PLCC: 0.1391177768975987, RMSE: 0.6379045306950892
+INFO - Epoch 108:
+INFO - Validation set - Evaluation Results - SRCC: -0.01850017364799102, KRCC: -0.0143975054803402, PLCC: 0.12037491838440664, RMSE: 0.6295874735014191
+INFO - Train set - Evaluation Results - SRCC: 0.04592602487456929, KRCC: 0.03479791970554254, PLCC: 0.1391177768976231, RMSE: 0.6379045306949331
+INFO - Epoch 109:
+INFO - Validation set - Evaluation Results - SRCC: -0.018879776621776805, KRCC: -0.014286153508140689, PLCC: 0.12104097539461137, RMSE: 0.629536108995904
+INFO - Train set - Evaluation Results - SRCC: 0.0463529893106973, KRCC: 0.0352295386217153, PLCC: 0.1391177768976231, RMSE: 0.6379045306949331
+INFO - Epoch 110:
+INFO - Validation set - Evaluation Results - SRCC: -0.018311597763222956, KRCC: -0.014009470489890775, PLCC: 0.12149750416980999, RMSE: 0.6295007364134605
+INFO - Train set - Evaluation Results - SRCC: 0.04591453598842983, KRCC: 0.03483931405993118, PLCC: 0.14099300718637256, RMSE: 0.6377336645866064
+INFO - Epoch 111:
+INFO - Validation set - Evaluation Results - SRCC: -0.019136325122381424, KRCC: -0.014475280799488767, PLCC: 0.12171605260544721, RMSE: 0.6294837555385939
+INFO - Train set - Evaluation Results - SRCC: 0.0471258800636796, KRCC: 0.03575874796300289, PLCC: 0.1391177768976231, RMSE: 0.6379045306949331
+INFO - Epoch 112:
+INFO - Validation set - Evaluation Results - SRCC: 0.01882024687388074, KRCC: 0.013506515880392407, PLCC: 0.12198013941405429, RMSE: 0.6294631948102832
+INFO - Train set - Evaluation Results - SRCC: 0.03656413910977665, KRCC: 0.0277240320085047, PLCC: 0.14099300718637256, RMSE: 0.6377336645866064
+INFO - Epoch 113:
+INFO - Validation set - Evaluation Results - SRCC: -0.019475977126560434, KRCC: -0.014743299896504101, PLCC: 0.12211970265642519, RMSE: 0.6294523109507226
+INFO - Train set - Evaluation Results - SRCC: 0.04561557891292216, KRCC: 0.03456521981591764, PLCC: 0.1391177768976231, RMSE: 0.6379045306949331
+INFO - Epoch 156:
+INFO - Validation set - Evaluation Results - SRCC: -0.01786971053777837, KRCC: -0.013996443426843096, PLCC: 0.12217371416227372, RMSE: 0.6294480948560588
+INFO - Train set - Evaluation Results - SRCC: 0.045881664864255406, KRCC: 0.03474769011148522, PLCC: 0.14517657182894997, RMSE: 0.6373440526119423
+INFO - Epoch 157:
+INFO - Validation set - Evaluation Results - SRCC: -0.018267117495190457, KRCC: -0.013541391715650783, PLCC: 0.12238194701768476, RMSE: 0.6294318246418692
+INFO - Train set - Evaluation Results - SRCC: 0.04612305594265676, KRCC: 0.03491037920402069, PLCC: 0.14517657181876237, RMSE: 0.6373440526129053
+INFO - Epoch 158:
+INFO - Validation set - Evaluation Results - SRCC: -0.019707489509448912, KRCC: -0.014981666400281058, PLCC: 0.1225521727901264, RMSE: 0.6294185030710421
+INFO - Train set - Evaluation Results - SRCC: 0.04583331577125665, KRCC: 0.03466202829328483, PLCC: 0.11289694639393685, RMSE: 0.6400501659956234
+INFO - Epoch 159:
+INFO - Validation set - Evaluation Results - SRCC: -0.017985804807077524, KRCC: -0.013993616262286646, PLCC: 0.12268340770504549, RMSE: 0.6294082204823663
+INFO - Train set - Evaluation Results - SRCC: 0.04590945411450719, KRCC: 0.034731422770580445, PLCC: 0.11291523030114384, RMSE: 0.6400488276709617
+INFO - Epoch 160:
+INFO - Validation set - Evaluation Results - SRCC: -0.01860283201809447, KRCC: -0.014539044810413291, PLCC: 0.12277373690009005, RMSE: 0.62940113590469
+INFO - Train set - Evaluation Results - SRCC: 0.05267166359775942, KRCC: 0.03925931944279873, PLCC: 0.11293563012605955, RMSE: 0.6400473342236442
+INFO - Epoch 161:
+INFO - Validation set - Evaluation Results - SRCC: -0.020356715766909655, KRCC: -0.015728065313698785, PLCC: 0.12286664751019671, RMSE: 0.6293938449939146
+INFO - Train set - Evaluation Results - SRCC: 0.08386302588817236, KRCC: 0.06124613670538018, PLCC: 0.112954973930113, RMSE: 0.6400459177945631
+INFO - Epoch 162:
+INFO - Validation set - Evaluation Results - SRCC: -0.0369265789197801, KRCC: -0.028059967133286373, PLCC: 0.12288878696798108, RMSE: 0.6293921051892598
+INFO - Train set - Evaluation Results - SRCC: 0.08367227725111746, KRCC: 0.061157558161785835, PLCC: 0.11297781867400683, RMSE: 0.6400442453494223
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.034230501816019054
+INFO - KRCC_train: 0.02575979675749031
+INFO - PLCC_train: 0.114590591683034
+INFO - RMSE_train: 0.6383617918199214
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: 0.00938169618670165
+INFO - KRCC_test: 0.0061560086901214445
+INFO - PLCC_test: 0.0809698024556057
+INFO - RMSE_test: 0.6311733389874151
+INFO - ======================================================
+INFO -  -- 2.677598476409912 seconds elapsed...
+
+
+INFO - 13th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: 0.02861468556669042, KRCC: 0.019411354847801685, PLCC: 0.09582317463258218, RMSE: 0.6193632465241947
+INFO - Train set - Evaluation Results - SRCC: -0.07226087285111285, KRCC: -0.05240193502029036, PLCC: 0.11277259529913586, RMSE: 0.629420101984382
+INFO - Epoch 3:
+INFO - Validation set - Evaluation Results - SRCC: 0.02716395378589916, KRCC: 0.017691253087236958, PLCC: 0.09582317464306761, RMSE: 0.6193632465235666
+INFO - Train set - Evaluation Results - SRCC: -0.09520510833485463, KRCC: -0.06957494630804134, PLCC: 0.10716393920713375, RMSE: 0.6298131897790226
+INFO - Epoch 5:
+INFO - Validation set - Evaluation Results - SRCC: 0.027037138518619074, KRCC: 0.017474944398513784, PLCC: 0.0958231746431018, RMSE: 0.6193632465235646
+INFO - Train set - Evaluation Results - SRCC: -0.07174147646113381, KRCC: -0.05198348893887707, PLCC: 0.10789021378038172, RMSE: 0.6297634316592827
+INFO - Epoch 77:
+INFO - Validation set - Evaluation Results - SRCC: -0.004381181585754218, KRCC: -0.0008953518410875193, PLCC: 0.09582837484592129, RMSE: 0.6193629351075499
+INFO - Train set - Evaluation Results - SRCC: 0.053208475802901924, KRCC: 0.03982208837603143, PLCC: 0.10565105695160043, RMSE: 0.6299157481026537
+INFO - Epoch 78:
+INFO - Validation set - Evaluation Results - SRCC: -0.003778530429786151, KRCC: -0.0006885241137483412, PLCC: 0.09584218973197708, RMSE: 0.6193621094077881
+INFO - Train set - Evaluation Results - SRCC: 0.09131934828245328, KRCC: 0.06673332821523355, PLCC: 0.1058022233718626, RMSE: 0.6299055668494803
+INFO - Epoch 79:
+INFO - Validation set - Evaluation Results - SRCC: -0.004285140502179868, KRCC: -0.0010330982781779068, PLCC: 0.09584319643046613, RMSE: 0.6193620472261124
+INFO - Train set - Evaluation Results - SRCC: 0.05363937293006464, KRCC: 0.040120868561773326, PLCC: 0.10584754551987269, RMSE: 0.6299025114940697
+INFO - Epoch 80:
+INFO - Validation set - Evaluation Results - SRCC: -0.016570161168967985, KRCC: -0.01049521821577921, PLCC: 0.09584466210227359, RMSE: 0.6193619595053323
+INFO - Train set - Evaluation Results - SRCC: 0.09137041502883704, KRCC: 0.0667486736332844, PLCC: 0.10591669270856982, RMSE: 0.6298978474005941
+INFO - Epoch 81:
+INFO - Validation set - Evaluation Results - SRCC: -0.003933504243119177, KRCC: -0.0002751959747797446, PLCC: 0.09586241838668796, RMSE: 0.6193608955326191
+INFO - Train set - Evaluation Results - SRCC: 0.05379833894257979, KRCC: 0.04024760218497389, PLCC: 0.10598886238602334, RMSE: 0.6298929761879172
+INFO - Epoch 82:
+INFO - Validation set - Evaluation Results - SRCC: -0.003805449443222051, KRCC: -0.0004821541684164097, PLCC: 0.09587111811187773, RMSE: 0.6193603742129883
+INFO - Train set - Evaluation Results - SRCC: 0.05410880672156505, KRCC: 0.04045609123002205, PLCC: 0.10607463624085256, RMSE: 0.6298871823561348
+INFO - Epoch 84:
+INFO - Validation set - Evaluation Results - SRCC: -0.0031950918017723384, KRCC: -0.0002065483213832791, PLCC: 0.09587581742076612, RMSE: 0.6193600925683344
+INFO - Train set - Evaluation Results - SRCC: 0.05386770511217653, KRCC: 0.0402009031984711, PLCC: 0.10614216780446711, RMSE: 0.6298826173988867
+INFO - Epoch 85:
+INFO - Validation set - Evaluation Results - SRCC: -0.05825580643036584, KRCC: -0.041409897064300774, PLCC: 0.09588444000212476, RMSE: 0.6193595769008969
+INFO - Train set - Evaluation Results - SRCC: 0.05450748195494808, KRCC: 0.040765641063227435, PLCC: 0.10624189758158355, RMSE: 0.6298758705882158
+INFO - Epoch 86:
+INFO - Validation set - Evaluation Results - SRCC: -0.004396458940611596, KRCC: -0.0009636842832241972, PLCC: 0.0958860249415561, RMSE: 0.6193594809145847
+INFO - Train set - Evaluation Results - SRCC: 0.05366520647068293, KRCC: 0.04011363340664197, PLCC: 0.10623485760784056, RMSE: 0.6298763470567261
+INFO - Epoch 124:
+INFO - Validation set - Evaluation Results - SRCC: -0.0032417059088095347, KRCC: 0.0002754809797493131, PLCC: 0.09588867738602383, RMSE: 0.6193593243709549
+INFO - Train set - Evaluation Results - SRCC: 0.05313254605670466, KRCC: 0.03978654952411051, PLCC: 0.10715579323959774, RMSE: 0.6298137461106624
+INFO - Epoch 125:
+INFO - Validation set - Evaluation Results - SRCC: -0.047936035109722545, KRCC: -0.03309923991790632, PLCC: 0.09588937278202807, RMSE: 0.6193592812623553
+INFO - Train set - Evaluation Results - SRCC: 0.05357534182481105, KRCC: 0.04010342268035169, PLCC: 0.10716863155722096, RMSE: 0.6298128695567381
+INFO - Epoch 126:
+INFO - Validation set - Evaluation Results - SRCC: -0.0035897750838068208, KRCC: -0.00013768106005358974, PLCC: 0.09589780397527001, RMSE: 0.6193587745252557
+INFO - Train set - Evaluation Results - SRCC: 0.05363365703707791, KRCC: 0.040156202619629135, PLCC: 0.10717968510322992, RMSE: 0.6298121147831647
+INFO - Epoch 127:
+INFO - Validation set - Evaluation Results - SRCC: -0.002944006133156243, KRCC: 0.00041329285008220184, PLCC: 0.09590117191957923, RMSE: 0.6193585728052429
+INFO - Train set - Evaluation Results - SRCC: 0.053767541291030396, KRCC: 0.040287930017616026, PLCC: 0.10718348269549806, RMSE: 0.6298118554432961
+INFO - Epoch 128:
+INFO - Validation set - Evaluation Results - SRCC: -0.0030644922347448076, KRCC: 0.00034430663212072106, PLCC: 0.0959021547315256, RMSE: 0.6193585138139794
+INFO - Train set - Evaluation Results - SRCC: 0.053717510837742295, KRCC: 0.04025641618413553, PLCC: 0.10718659859714132, RMSE: 0.6298116426666954
+INFO - Epoch 130:
+INFO - Validation set - Evaluation Results - SRCC: -0.002782650796072406, KRCC: 0.0004820709020021084, PLCC: 0.09590268005505764, RMSE: 0.6193584824129681
+INFO - Train set - Evaluation Results - SRCC: 0.05360143913125564, KRCC: 0.04014362243662632, PLCC: 0.10720987607218663, RMSE: 0.6298100528152756
+INFO - Epoch 131:
+INFO - Validation set - Evaluation Results - SRCC: -0.0029166404224857173, KRCC: 0.00027555236945718, PLCC: 0.09590753589927048, RMSE: 0.61935819122867
+INFO - Train set - Evaluation Results - SRCC: 0.05336038148731536, KRCC: 0.039926644677308235, PLCC: 0.1072241258207544, RMSE: 0.6298090793900065
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.026705420915071006
+INFO - KRCC_train: 0.01947861914568813
+INFO - PLCC_train: 0.10001427454035518
+INFO - RMSE_train: 0.6284513257757207
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: -0.018589921533706557
+INFO - KRCC_test: -0.01440522473317926
+INFO - PLCC_test: 0.1814620506296658
+INFO - RMSE_test: 0.6600902790964623
+INFO - ======================================================
+INFO -  -- 1.6233630180358887 seconds elapsed...
+
+
+INFO - 14th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.0749941419686635, KRCC: -0.05266647818482145, PLCC: 0.1802355628659087, RMSE: 0.6239086162237962
+INFO - Train set - Evaluation Results - SRCC: -0.041658988227642975, KRCC: -0.030147047352237104, PLCC: 0.09565675622658283, RMSE: 0.6417535739233846
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.024398045113423132
+INFO - KRCC_train: 0.018725600651860394
+INFO - PLCC_train: 0.10840400438008477
+INFO - RMSE_train: 0.6392618783308556
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: -0.0105519228884607
+INFO - KRCC_test: -0.008639326257839027
+INFO - PLCC_test: 0.13766743478283722
+INFO - RMSE_test: 0.624787389220954
+INFO - ======================================================
+INFO -  -- 1.1677217483520508 seconds elapsed...
+
+
+INFO - 15th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: 0.12291894232396497, KRCC: 0.08774972898982711, PLCC: 0.20869018893058494, RMSE: 0.6247235066985439
+INFO - Train set - Evaluation Results - SRCC: -0.017082519391147043, KRCC: -0.011317897863292459, PLCC: 0.04233458077904477, RMSE: 0.6468791744619415
+INFO - Epoch 7:
+INFO - Validation set - Evaluation Results - SRCC: -0.22344489080897412, KRCC: -0.16218536983549986, PLCC: 0.2393774001495399, RMSE: 0.620216724198201
+INFO - Train set - Evaluation Results - SRCC: -0.0013209716152850213, KRCC: -0.0010345139828827796, PLCC: 0.09097016790049456, RMSE: 0.644774967568306
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.008565271086024109
+INFO - KRCC_train: 0.006293903097139493
+INFO - PLCC_train: 0.10084291450591246
+INFO - RMSE_train: 0.6428507151494821
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: -0.008199941675256795
+INFO - KRCC_test: -0.0038362556827936114
+INFO - PLCC_test: 0.16452917611283926
+INFO - RMSE_test: 0.6106789591710793
+INFO - ======================================================
+INFO -  -- 1.30562162399292 seconds elapsed...
+
+
+INFO - 16th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: 0.04678000799820693, KRCC: 0.03553481036766604, PLCC: 0.07632880731139306, RMSE: 0.6281477012905617
+INFO - Train set - Evaluation Results - SRCC: -0.016256445057800793, KRCC: -0.010467848892596023, PLCC: 0.10820080287779331, RMSE: 0.6328700207446203
+INFO - Epoch 2:
+INFO - Validation set - Evaluation Results - SRCC: 0.10280158087292111, KRCC: 0.07755240436581576, PLCC: 0.10215708060718773, RMSE: 0.6266896491404513
+INFO - Train set - Evaluation Results - SRCC: -0.07265103819558441, KRCC: -0.05141491672600124, PLCC: 0.15175650601954177, RMSE: 0.6292342596988938
+INFO - Epoch 5:
+INFO - Validation set - Evaluation Results - SRCC: 0.10271035756985589, KRCC: 0.07735699863542587, PLCC: 0.10215708090131977, RMSE: 0.6266896491034785
+INFO - Train set - Evaluation Results - SRCC: -0.0681387443500314, KRCC: -0.049427022701493926, PLCC: 0.1634096592878732, RMSE: 0.6280504199112699
+INFO - Epoch 7:
+INFO - Validation set - Evaluation Results - SRCC: -0.08908271207362457, KRCC: -0.06661127362365694, PLCC: 0.15932325451263074, RMSE: 0.6219384169606755
+INFO - Train set - Evaluation Results - SRCC: -0.0008326748183952898, KRCC: -0.0011421234610687304, PLCC: 0.049029887988487814, RMSE: 0.6358418654187616
+INFO - Epoch 83:
+INFO - Validation set - Evaluation Results - SRCC: -0.13796766982999129, KRCC: -0.09963534768077455, PLCC: 0.16063294260157612, RMSE: 0.621890817264246
+INFO - Train set - Evaluation Results - SRCC: 0.07072407426511777, KRCC: 0.05170555260999936, PLCC: 0.14395553533980449, RMSE: 0.6299767020862661
+INFO - Epoch 95:
+INFO - Validation set - Evaluation Results - SRCC: -0.13842702727827366, KRCC: -0.10002052499168816, PLCC: 0.16141641628229017, RMSE: 0.6218346530197025
+INFO - Train set - Evaluation Results - SRCC: 0.07069742151568424, KRCC: 0.0518115555843691, PLCC: 0.14443886503849937, RMSE: 0.6299318652777603
+INFO - Epoch 104:
+INFO - Validation set - Evaluation Results - SRCC: -0.13914670271210408, KRCC: -0.10003639022743384, PLCC: 0.16225187782866163, RMSE: 0.6217260880092728
+INFO - Train set - Evaluation Results - SRCC: 0.07114843282274659, KRCC: 0.0521547535708308, PLCC: 0.1446041049881455, RMSE: 0.6299165013279325
+INFO - Epoch 146:
+INFO - Validation set - Evaluation Results - SRCC: -0.13920135086766106, KRCC: -0.10034354799320011, PLCC: 0.163336280743645, RMSE: 0.6216029248121989
+INFO - Train set - Evaluation Results - SRCC: 0.07273567107251053, KRCC: 0.05344120861011084, PLCC: 0.14524487524216415, RMSE: 0.6298567530794232
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.042699401557122416
+INFO - KRCC_train: 0.03196000594245783
+INFO - PLCC_train: 0.12619906392968816
+INFO - RMSE_train: 0.6306190722276737
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: -0.04830444851913805
+INFO - KRCC_test: -0.034620726367201815
+INFO - PLCC_test: 0.04605551421276449
+INFO - RMSE_test: 0.6601060034091873
+INFO - ======================================================
+INFO -  -- 1.6158998012542725 seconds elapsed...
+
+
+INFO - 17th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.032432299095059056, KRCC: -0.021873521603492332, PLCC: 0.12372244970170977, RMSE: 0.6339831231518022
+INFO - Train set - Evaluation Results - SRCC: -0.042012392285566726, KRCC: -0.030816921672115853, PLCC: 0.09655163503380243, RMSE: 0.6430772346048174
+INFO - Epoch 2:
+INFO - Validation set - Evaluation Results - SRCC: -0.006118232795529409, KRCC: -0.003991635350634517, PLCC: 0.13089115716495836, RMSE: 0.6333952673474489
+INFO - Train set - Evaluation Results - SRCC: -0.051522109766176466, KRCC: -0.03798168449496274, PLCC: 0.0892938314310717, RMSE: 0.6435148676086136
+INFO - Epoch 16:
+INFO - Validation set - Evaluation Results - SRCC: 0.024762779815248524, KRCC: 0.01656684284827341, PLCC: 0.13385329754637065, RMSE: 0.6331425302296415
+INFO - Train set - Evaluation Results - SRCC: 0.030085845293529173, KRCC: 0.021556565724588014, PLCC: 0.11026179410068179, RMSE: 0.6421562910093394
+INFO - Epoch 24:
+INFO - Validation set - Evaluation Results - SRCC: 0.044548029313910845, KRCC: 0.030659351170141354, PLCC: 0.14218266807737143, RMSE: 0.6324009546289013
+INFO - Train set - Evaluation Results - SRCC: 0.06269507836441474, KRCC: 0.046374289131027216, PLCC: 0.12307108158822425, RMSE: 0.6411840970743379
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.05693371937122446
+INFO - KRCC_train: 0.042306777422623384
+INFO - PLCC_train: 0.12107717576150206
+INFO - RMSE_train: 0.6403199516646543
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: -0.11534609780904764
+INFO - KRCC_test: -0.08565652537044155
+INFO - PLCC_test: 0.1533607408946433
+INFO - RMSE_test: 0.616054394637054
+INFO - ======================================================
+INFO -  -- 1.265876054763794 seconds elapsed...
+
+
+INFO - 18th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.031319662205841946, KRCC: -0.023464980991313483, PLCC: 0.08682274308249656, RMSE: 0.6340477317763591
+INFO - Train set - Evaluation Results - SRCC: 0.02857904202929933, KRCC: 0.02029499965377581, PLCC: 0.07323434929538221, RMSE: 0.6415231041927257
+INFO - Epoch 2:
+INFO - Validation set - Evaluation Results - SRCC: -0.06609001777801289, KRCC: -0.048151335886381166, PLCC: 0.12998832466387283, RMSE: 0.6310511600916237
+INFO - Train set - Evaluation Results - SRCC: 0.0013495560576330925, KRCC: 0.00113441546535875, PLCC: -4.476202916675262e-05, RMSE: 0.6432504289005064
+INFO - Epoch 8:
+INFO - Validation set - Evaluation Results - SRCC: -0.08936451032095738, KRCC: -0.06579188258068179, PLCC: 0.13480640021699705, RMSE: 0.630641560571226
+INFO - Train set - Evaluation Results - SRCC: -0.06382852338666894, KRCC: -0.045852402889138076, PLCC: 0.05361939905120498, RMSE: 0.6423250355029348
+INFO - Epoch 135:
+INFO - Validation set - Evaluation Results - SRCC: -0.050604622437970696, KRCC: -0.03832248041075508, PLCC: 0.14460694389174297, RMSE: 0.6298635021202948
+INFO - Train set - Evaluation Results - SRCC: 0.02828771545641596, KRCC: 0.021367186429462837, PLCC: 0.1061606134196555, RMSE: 0.6396153748542027
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.011354357734939218
+INFO - KRCC_train: 0.008723161945118532
+INFO - PLCC_train: 0.09133555064962981
+INFO - RMSE_train: 0.6396253081286576
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: -0.03141368539778013
+INFO - KRCC_test: -0.022508172146995107
+INFO - PLCC_test: 0.15977473448495116
+INFO - RMSE_test: 0.6250015455334472
+INFO - ======================================================
+INFO -  -- 1.442777395248413 seconds elapsed...
+
+
+INFO - 19th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: 0.07807122907142862, KRCC: 0.053563930632880626, PLCC: 0.13948078250493906, RMSE: 0.6239735874145227
+INFO - Train set - Evaluation Results - SRCC: -0.056057473420019, KRCC: -0.0408576309100851, PLCC: 0.1067449792581582, RMSE: 0.6355435537497407
+INFO - Epoch 7:
+INFO - Validation set - Evaluation Results - SRCC: 0.03636827158833428, KRCC: 0.02426509736647183, PLCC: 0.13980197483301574, RMSE: 0.6239450451877996
+INFO - Train set - Evaluation Results - SRCC: -0.06022921530411962, KRCC: -0.044624258993272777, PLCC: 0.048894989508239506, RMSE: 0.6384311138608423
+INFO - Epoch 83:
+INFO - Validation set - Evaluation Results - SRCC: -0.03401255986562579, KRCC: -0.02196678901956208, PLCC: 0.14391497836826045, RMSE: 0.623573657696606
+INFO - Train set - Evaluation Results - SRCC: 0.07357975129026097, KRCC: 0.05437890373850773, PLCC: 0.1276924797843735, RMSE: 0.633963062008384
+INFO - Epoch 144:
+INFO - Validation set - Evaluation Results - SRCC: -0.03556405383588352, KRCC: -0.02307139572268984, PLCC: 0.14391523136353218, RMSE: 0.6235736064211885
+INFO - Train set - Evaluation Results - SRCC: 0.07438832929232446, KRCC: 0.05494034132861768, PLCC: 0.12953437611913832, RMSE: 0.6338103731056732
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.04824859277223611
+INFO - KRCC_train: 0.035642442657844414
+INFO - PLCC_train: 0.11593323849474471
+INFO - RMSE_train: 0.6335126715644852
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: -0.03021975320737411
+INFO - KRCC_test: -0.022384684311751547
+INFO - PLCC_test: 0.07597542063997445
+INFO - RMSE_test: 0.6506077853610593
+INFO - ======================================================
+INFO -  -- 1.286890983581543 seconds elapsed...
+
+
+INFO - 20th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.0021241618442168035, KRCC: -0.00405795634866621, PLCC: 0.1428286503334963, RMSE: 0.6272461783033599
+INFO - Train set - Evaluation Results - SRCC: -0.056156280878947216, KRCC: -0.04099619964549329, PLCC: 0.022170393389861556, RMSE: 0.6429392439543083
+INFO - Epoch 2:
+INFO - Validation set - Evaluation Results - SRCC: -0.11491648398265276, KRCC: -0.08332934270814038, PLCC: 0.16257251760134625, RMSE: 0.6253107725102544
+INFO - Train set - Evaluation Results - SRCC: -0.05722122790538093, KRCC: -0.040963630743758146, PLCC: 0.080401272197483, RMSE: 0.6410153328261212
+INFO - Epoch 3:
+INFO - Validation set - Evaluation Results - SRCC: -0.1136757745100018, KRCC: -0.08215041699907213, PLCC: 0.16669159145238727, RMSE: 0.6248750651430391
+INFO - Train set - Evaluation Results - SRCC: -0.06698063669262656, KRCC: -0.04838584397579871, PLCC: 0.05571504935199659, RMSE: 0.6420983941014434
+INFO - Epoch 4:
+INFO - Validation set - Evaluation Results - SRCC: -0.11409840207461029, KRCC: -0.08212050107023088, PLCC: 0.17042056946030668, RMSE: 0.6244709491267195
+INFO - Train set - Evaluation Results - SRCC: -0.06583154472690134, KRCC: -0.04747738928794958, PLCC: 0.07961399933514678, RMSE: 0.6410559702683314
+INFO - Epoch 6:
+INFO - Validation set - Evaluation Results - SRCC: -0.11341877268989163, KRCC: -0.08230805323463473, PLCC: 0.19673127738567997, RMSE: 0.6213567611585596
+INFO - Train set - Evaluation Results - SRCC: -0.025371651012237283, KRCC: -0.018587401721758125, PLCC: 0.0004995402046505948, RMSE: 0.6430972304286284
+INFO - Epoch 29:
+INFO - Validation set - Evaluation Results - SRCC: 0.09415642659595186, KRCC: 0.06851648372555912, PLCC: 0.19727810704227056, RMSE: 0.6212871247288513
+INFO - Train set - Evaluation Results - SRCC: 0.029918042059940107, KRCC: 0.021913528271768123, PLCC: 0.10111287207568556, RMSE: 0.6398014114829953
+INFO - Epoch 39:
+INFO - Validation set - Evaluation Results - SRCC: 0.09205081688067357, KRCC: 0.0669257591746658, PLCC: 0.19737040115361953, RMSE: 0.621275351630231
+INFO - Train set - Evaluation Results - SRCC: 0.030304095689534558, KRCC: 0.022361201911105688, PLCC: 0.10210355595444195, RMSE: 0.6397363394640488
+INFO - Epoch 40:
+INFO - Validation set - Evaluation Results - SRCC: 0.09251566108700232, KRCC: 0.0663903091281562, PLCC: 0.19738612723454524, RMSE: 0.621273345029495
+INFO - Train set - Evaluation Results - SRCC: 0.01982245195438936, KRCC: 0.01420577989715985, PLCC: 0.10247469690757066, RMSE: 0.6397117963840429
+INFO - Epoch 41:
+INFO - Validation set - Evaluation Results - SRCC: 0.06322592455590464, KRCC: 0.04391952052367068, PLCC: 0.19739668062715038, RMSE: 0.6212719983549888
+INFO - Train set - Evaluation Results - SRCC: 0.029459511323005987, KRCC: 0.021715489324646443, PLCC: 0.10297901240688818, RMSE: 0.6396783024145416
+INFO - Epoch 47:
+INFO - Validation set - Evaluation Results - SRCC: 0.09299565899469298, KRCC: 0.06763645247356287, PLCC: 0.1973971253801381, RMSE: 0.6212719416002663
+INFO - Train set - Evaluation Results - SRCC: 0.03404643291830778, KRCC: 0.025149233384790158, PLCC: 0.10352382867496815, RMSE: 0.6396419318429523
+INFO - Epoch 49:
+INFO - Validation set - Evaluation Results - SRCC: 0.0933717319010368, KRCC: 0.0679701241344026, PLCC: 0.19739823738635937, RMSE: 0.6212717996970878
+INFO - Train set - Evaluation Results - SRCC: 0.03402377395514442, KRCC: 0.025167013196996407, PLCC: 0.10383302596493865, RMSE: 0.639621204297981
+INFO - Epoch 50:
+INFO - Validation set - Evaluation Results - SRCC: 0.06482350416288615, KRCC: 0.0450262884641103, PLCC: 0.1973987981818286, RMSE: 0.6212717281336251
+INFO - Train set - Evaluation Results - SRCC: -0.010721691779289218, KRCC: -0.007773962559082432, PLCC: 0.10410637594562877, RMSE: 0.6396028278116779
+INFO - Epoch 53:
+INFO - Validation set - Evaluation Results - SRCC: 0.06370282738666268, KRCC: 0.04394923019469547, PLCC: 0.1973988485943665, RMSE: 0.6212717217004398
+INFO - Train set - Evaluation Results - SRCC: 0.034181473124800736, KRCC: 0.02539643122366895, PLCC: 0.10527840658623708, RMSE: 0.6395234819871237
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.0059348618054620925
+INFO - KRCC_train: 0.004436369859620328
+INFO - PLCC_train: 0.11897750777184306
+INFO - RMSE_train: 0.6371064366718526
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: 0.0913925173698633
+INFO - KRCC_test: 0.06597588279066592
+INFO - PLCC_test: 0.09529712031230791
+INFO - RMSE_test: 0.633800678124336
+INFO - ======================================================
+INFO -  -- 1.3031797409057617 seconds elapsed...
+
+
+INFO - 21th repeated 80-20 hold out test
+INFO - Parameters - Number of repeats for 80-20 hold out test: 21, Batch size: 256, Number of epochs: 200
+INFO - Network Parameters - hidden_features: 256, drop_rate: 0.1, patience: 5
+INFO - Optimizer Parameters - loss_type: MAERankLoss, optimizer_type: sgd, initial_lr: 0.01, weight_decay: 0.0005, use_swa: True
+INFO - MAEAndRankLoss - l1_w: 0.6, rank_w: 1.0
+INFO - Epoch 1:
+INFO - Validation set - Evaluation Results - SRCC: -0.19257760404921848, KRCC: -0.14742242364507704, PLCC: 0.20706815113583615, RMSE: 0.6172165375237189
+INFO - Train set - Evaluation Results - SRCC: -0.08377107021507113, KRCC: -0.06145168536588756, PLCC: 0.058580722269069116, RMSE: 0.6406737140255976
+INFO - ============================================================================================================
+INFO - Best results in Mlp model within one split
+INFO - MODEL: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+INFO - ======================================================
+INFO - Train set - Evaluation Results
+INFO - SRCC_train: 0.07561625646446365
+INFO - KRCC_train: 0.05588202289505015
+INFO - PLCC_train: 0.09718241883713105
+INFO - RMSE_train: 0.6369852244523824
+INFO - ======================================================
+INFO - Test set - Evaluation Results
+INFO - SRCC_test: -0.028310790456098342
+INFO - KRCC_test: -0.022000811462654403
+INFO - PLCC_test: 0.07104768305794729
+INFO - RMSE_test: 0.6424318524231436
+INFO - ======================================================
+INFO -  -- 1.556473970413208 seconds elapsed...
+
+
+INFO - 
+INFO - ======================================================
+INFO - Average training results among all repeated 80-20 holdouts:
+INFO - SRCC: 0.025514 (std: 0.032275)
+INFO - KRCC: 0.018726 (std: 0.023830)
+INFO - PLCC: 0.105792 (std: 0.012113)
+INFO - RMSE: 0.636985 (std: 0.003975)
+INFO - ======================================================
+INFO - Average testing results among all repeated 80-20 holdouts:
+INFO - SRCC: -0.008200 (std: 0.082271)
+INFO - KRCC: -0.004070 (std: 0.061008)
+INFO - PLCC: 0.116554 (std: 0.049095)
+INFO - RMSE: 0.635211 (std: 0.015810)
+INFO - ======================================================
+INFO - 
+
+INFO - all RMSE: tensor([0.6346, 0.6452, 0.6134, 0.6352, 0.6533, 0.6209, 0.6565, 0.6437, 0.6442,
+        0.6501, 0.6159, 0.6312, 0.6601, 0.6248, 0.6107, 0.6601, 0.6161, 0.6250,
+        0.6506, 0.6338, 0.6424])
+INFO - median test RMSE: 0.6352106332778931
+INFO - Indices of median metrics: [3]
+INFO - Best model predict score:           MOS  y_test_pred  y_test_pred_logistic
+0    4.260000     2.949227              3.073080
+1    4.151852     3.037131              3.161717
+2    4.140000     2.935208              3.025469
+3    4.140000     2.930983              3.007347
+4    4.080000     2.930983              3.007348
+..        ...          ...                   ...
+235  1.600000     2.930983              3.007348
+236  1.560000     2.986347              3.137078
+237  1.520000     2.930983              3.007348
+238  1.480000     2.930983              3.007348
+239  1.460000     2.930983              3.007348
+
+[240 rows x 3 columns]
+INFO - Best model: AveragedModel(
+  (module): Mlp(
+    (fc1): Linear(in_features=512, out_features=256, bias=True)
+    (act1): GELU(approximate='none')
+    (drop1): Dropout(p=0.1, inplace=False)
+    (fc2): Linear(in_features=256, out_features=128, bias=True)
+    (act2): GELU(approximate='none')
+    (drop2): Dropout(p=0.1, inplace=False)
+    (fc3): Linear(in_features=128, out_features=1, bias=True)
+  )
+)

@@ -1,0 +1,32 @@
+[2025-09-01 15:02:10,021] INFO: Using device: cuda
+[2025-09-01 15:02:10,022] INFO: Dataset loaded. Total videos: 4, Total batches: 4
+[2025-09-01 15:02:11,492] INFO: Loading pretrained weights from Hugging Face hub (timm/swin_large_patch4_window7_224.ms_in22k_ft_in1k)
+[2025-09-01 15:02:11,630] INFO: [timm/swin_large_patch4_window7_224.ms_in22k_ft_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+[2025-09-01 15:02:32,712] INFO: Slowfast Feature shape: torch.Size([6912])
+[2025-09-01 15:02:32,712] INFO: SwinT Feature shape: torch.Size([4608])
+[2025-09-01 15:02:32,712] INFO: Semantic CLIP Feature shape: torch.Size([1536])
+[2025-09-01 15:02:32,712] INFO: VQA Feature shape: torch.Size([13056])
+[2025-09-01 15:02:32,712] INFO: Processed 0_02_06_1603525129-yase.mp4 in 9.98 seconds
+[2025-09-01 15:02:43,747] INFO: Slowfast Feature shape: torch.Size([6912])
+[2025-09-01 15:02:43,747] INFO: SwinT Feature shape: torch.Size([4608])
+[2025-09-01 15:02:43,747] INFO: Semantic CLIP Feature shape: torch.Size([1536])
+[2025-09-01 15:02:43,747] INFO: VQA Feature shape: torch.Size([13056])
+[2025-09-01 15:02:43,747] INFO: Processed 0_03_00_1533467737.mp4 in 11.01 seconds
+[2025-09-01 15:02:50,943] INFO: Slowfast Feature shape: torch.Size([6912])
+[2025-09-01 15:02:50,943] INFO: SwinT Feature shape: torch.Size([4608])
+[2025-09-01 15:02:50,943] INFO: Semantic CLIP Feature shape: torch.Size([1536])
+[2025-09-01 15:02:50,943] INFO: VQA Feature shape: torch.Size([13056])
+[2025-09-01 15:02:50,943] INFO: Processed 0_09_00_1529317714.mp4 in 7.17 seconds
+[2025-09-01 15:02:58,106] INFO: Slowfast Feature shape: torch.Size([6912])
+[2025-09-01 15:02:58,106] INFO: SwinT Feature shape: torch.Size([4608])
+[2025-09-01 15:02:58,106] INFO: Semantic CLIP Feature shape: torch.Size([1536])
+[2025-09-01 15:02:58,106] INFO: VQA Feature shape: torch.Size([13056])
+[2025-09-01 15:02:58,106] INFO: Processed 0_16_07_500001604801190-yase.mp4 in 7.15 seconds
+[2025-09-01 15:02:58,172] INFO: Features saved to /home/xinyi/Project/CAMP-VQA/features/finevd_test/camp-vqa/slowfast_test_features.pt: torch.Size([4, 6912])
+
+[2025-09-01 15:02:58,172] INFO: Features saved to /home/xinyi/Project/CAMP-VQA/features/finevd_test/camp-vqa/swint_test_features.pt: torch.Size([4, 4608])
+
+[2025-09-01 15:02:58,172] INFO: Features saved to /home/xinyi/Project/CAMP-VQA/features/finevd_test/camp-vqa/semantic_embs_test_features.pt: torch.Size([4, 1536])
+
+[2025-09-01 15:02:58,173] INFO: Features saved to /home/xinyi/Project/CAMP-VQA/features/finevd_test/camp-vqa/camp-vqa_test_features.pt: torch.Size([4, 13056])
+

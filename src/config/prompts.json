@@ -1,0 +1,35 @@
+{
+  "quality_prompt_base": "You are a video quality assessment expert. Analyze this video frame and describe its perceptual quality in a short paragraph. Your analysis must address each of the following quality attributes:\n- Sharpness (e.g., sharp, slightly fuzzy, very blurry)\n- Focus (e.g., in-focus, out-of-focus)\n- Noise (e.g., noiseless, mild noise, severe noise)\n- Motion Blur (e.g., clear-motion, blur-motion)\n- Flicker (e.g., stable, shaky)\n- Compression Artifacts (e.g., blurring, ringing, blocking, banding)\n- Color Issues (e.g., natural, faded)\n- Exposure (e.g., well-exposed, overexposed, underexposed)\n- Any other noticeable distortions (e.g., ghosting, flickering)\n\nFor each attribute, clearly indicate:\n- Type of distortion (if any)\n- Severity (choose from: none, mild, moderate, severe)\n\nRespond with a short paragraph describing the perceptual quality based on the above, like: 'mild blur in background, moderate blocking in flat areas.' Do not describe the image content or name any objects and animals.",
+  "curr_frame_content": "Describe the visible content of this video frame as if explaining to someone who cannot see it. Mention the key objects, scene elements, or actions. Be concise and avoid any reference to image quality or technical terms.",
+  "residual_prompt": "This image is a residual fragment between the current and previous video frames, emphasizing visual differences caused by quality degradations. List the 1–2 most visible types of degradation (e.g., 'blurring', 'blockiness', 'ghosting', 'flickering', 'sharpness', 'color inconsistency', or 'noise'). Only return distinct quality-related keywords. Do not describe the scene, do not guess objects, and do not repeat terms.",
+  "frag_prompt": "This image is a small fragment cropped from a video frame and may lack full visual context. List the 1–2 most clearly visible quality issues (e.g., 'blurring', 'blockiness', 'ghosting', 'flickering', 'sharpness', 'color inconsistency', or 'noise'). Only return distinct quality-related keywords. Do not describe the scene, do not guess objects, and do not repeat terms.",
+  "quality_hints": {
+    "mos": {
+      "excellent": "The video is of excellent perceptual quality with almost no visible distortions.",
+      "good": "The video has good quality with minor visible artifacts.",
+      "fair": "The video shows fair quality with some noticeable distortions.",
+      "bad": "The video has bad perceptual quality with clearly visible degradations.",
+      "poor": "The video is of very low quality with severe visible artifacts and distortions."
+    },
+    "resolution": {
+      "low": "The resolution is relatively low, which may affect texture clarity or sharpness.",
+      "sd": "The resolution is standard-definition, suitable for most content.",
+      "hd": "The resolution is high enough for detailed visual content."
+    },
+    "bitrate": {
+      "low": "The bitrate is low, and compression artifacts are likely.",
+      "medium": "The bitrate is moderate, which may cause some compression artifacts.",
+      "high": "The bitrate is relatively high, which supports better preservation of visual quality."
+    },
+    "bitdepth": {
+      "low": "The video uses 8-bit color depth, which may cause slight banding in gradients.",
+      "standard": "",
+      "high": "The video uses high bit depth, preserving more color detail."
+    },
+    "framerate": {
+      "low": "The frame rate is low, which may impact temporal smoothness.",
+      "standard": "The frame rate is standard and supports smooth playback.",
+      "high": "The frame rate is high and excellent for high motion content."
+    }
+  }
+}
