@@ -7,7 +7,7 @@ Official Code for the following paper:
 
 **X. Wang, A. Katsenou, J.Shen and D. Bull**. [CAMP-VQA: Caption-Embedded Multimodal Perception for No-Reference Quality Assessment of Compressed Video](https://arxiv.org/abs/)
 
-[Our paper]() was accepted by the IEEE/CVF Winter Conference on Applications of Computer Vision 2026. ([WACV 2026](https://wacv.thecvf.com/)).
+[//]: # ([Our paper]&#40;&#41; was accepted by the IEEE/CVF Winter Conference on Applications of Computer Vision 2026. &#40;[WACV 2026]&#40;https://wacv.thecvf.com/&#41;&#41;.)
 
 
 Try our online demo on Hugging Face 🤗: [https://huggingface.co/spaces/xinyiW915/CAMP-VQA](https://huggingface.co/spaces/xinyiW915/CAMP-VQA)
