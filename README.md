@@ -14,9 +14,6 @@ Try our online demo on Hugging Face 🤗: [https://huggingface.co/spaces/xinyiW9
 
 ---
 ## Performance
-
-[//]: # (put badge)
-
 We evaluated the proposed model, CAMP-VQA, on the seven main-stream UGC benchmark datasets. The experimental testing included:
 1. Training and testing were performed on each target dataset, referred to as intra-dataset experiments. 
 2. Pre-training the model on LSVQ, followed by fine-tuning on the target datasets (denoted as w/ fine-tune), aimed at assessing the model’s transferability and adaptation capabilities.
