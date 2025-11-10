@@ -1,6 +1,6 @@
 # CAMP-VQA
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=xinyiW915/CAMP-VQA) 
-[![GitHub stars](https://img.shields.io/github/stars/xinyiW915/CAMP-VQA?style=social)](https://github.com/xinyiW915/CAMP-VQA)
+![GitHub Repo stars](https://img.shields.io/github/stars/xinyiW915/CAMP-VQA?logo=github)
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 
 Official Code for the following paper:
