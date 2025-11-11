@@ -154,17 +154,26 @@ This work was funded by the UKRI MyWorld Strength in Places Programme (SIPF00006
 If you find this paper and the repo useful, please cite our paper 😊:
 
 ```bibtex
+@article{wang2025camp,
+      title={CAMP-VQA: Caption-Embedded Multimodal Perception for No-Reference Quality Assessment of Compressed Video},
+      author={Wang, Xinyi and Katsenou, Angeliki, Shen, Junxiao and Bull, David},
+      booktitle={IEEE/CVF Winter Conference on Applications of Computer Vision (WACV2026)}, 
+      year={2025},
+}
 @article{wang2025diva,
       title={DIVA-VQA: Detecting Inter-Frame Variations in UGC Video Quality},
       author={Wang, Xinyi and Katsenou, Angeliki and Bull, David},
       booktitle={IEEE International Conference on Image Processing (ICIP 2025)}, 
       year={2025},
 }
-@article{wang2025camp,
-      title={CAMP-VQA: Caption-Embedded Multimodal Perception for No-Reference Quality Assessment of Compressed Video},
-      author={Wang, Xinyi and Katsenou, Angeliki, Shen, Junxiao and Bull, David},
-      booktitle={IEEE/CVF Winter Conference on Applications of Computer Vision (WACV2026)}, 
-      year={2025},
+@article{wang2024relax,
+      title={ReLaX-VQA: Residual Fragment and Layer Stack Extraction for Enhancing Video Quality Assessment},
+      author={Wang, Xinyi and Katsenou, Angeliki and Bull, David},
+      year={2024},
+      eprint={2407.11496},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV},
+      url={https://arxiv.org/abs/2407.11496}, 
 }
 ```
 
