@@ -17,7 +17,6 @@ from extractor.extract_clip_embeds import extract_features_clip_embed
 from extractor.extract_slowfast_clip import SlowFast, extract_features_slowfast_pool
 from extractor.extract_swint_clip import SwinT, extract_features_swint_pool
 from model_finetune import fix_state_dict
-from model_regression_lsvq import preprocess_data
 
 
 def get_transform(resize):
@@ -44,7 +43,6 @@ def load_model(config, device, Mlp, input_features=13056):
 
     if config.intra_cross_experiment == 'intra':
         if config.train_data_name == 'lsvq_train':
-            from model_regression_lsvq import Mlp, preprocess_data
             if config.test_data_name  == 'lsvq_test':
                 model_path = os.path.join(config.save_model_path, f"./{config.train_data_name}_{config.network_name}_{config.model_name}_{config.select_criteria}_trained_model_kfold.pth")
             elif config.test_data_name  == 'lsvq_test_1080p':
@@ -53,11 +51,9 @@ def load_model(config, device, Mlp, input_features=13056):
                 print("Please use a cross-dataset experiment setting for the lsvq_train model to test it on another dataset, please try using the input 'cross' for 'intra_cross_experiment'.")
                 sys.exit(1)
         else:
-            from model_regression import Mlp, preprocess_data
             model_path = os.path.join(config.save_model_path, f"best_model/{config.train_data_name}_{config.network_name}_{config.model_name}_{config.select_criteria}_trained_model.pth")
 
     elif config.intra_cross_experiment == 'cross':
-        from model_regression_lsvq import Mlp, preprocess_data
         if config.train_data_name == 'lsvq_train':
             if config.is_finetune:
                 model_path = os.path.join(config.save_model_path, f"fine_tune/{config.test_data_name}_{config.network_name}_fine_tuned_model.pth")
@@ -114,13 +110,11 @@ def evaluate_video_quality(data_loader, model_slowfast, model_swint, clip_model,
 
     vqa_feats = vqa_feats
     feature_tensor, _ = preprocess_data(vqa_feats, None)
-    if feature_tensor.dim() == 1:
-        feature_tensor = feature_tensor.unsqueeze(0)
-    print(f"Feature tensor shape before MLP: {feature_tensor.shape}")
+    feature_tensor = feature_tensor.unsqueeze(0) if feature_tensor.dim() == 1 else feature_tensor
 
     model_mlp.eval()
     with torch.no_grad():
-        with torch.amp.autocast(device_type='cuda'):
+        with torch.amp.autocast(device_type=device.type if device.type == 'cuda' else 'cpu'):
             prediction = model_mlp(feature_tensor)
             predicted_score = prediction.item()
             return predicted_score
@@ -131,7 +125,6 @@ def parse_framerate(framerate_str):
     return framerate
 
 def get_video_metadata(video_path):
-    print(video_path)
     ffprobe_path = 'ffprobe'
     cmd = f'{ffprobe_path} -v error -select_streams v:0 -show_entries stream=width,height,nb_frames,r_frame_rate,bit_rate,bits_per_raw_sample,pix_fmt -of json {video_path}'
     try:
@@ -191,17 +184,15 @@ if __name__ == '__main__':
     videos_dir = os.path.dirname(config.test_video_path)
     test_df = pd.DataFrame(data)
     print(test_df.T)
-    print(f"Experiment Setting: {config.intra_cross_experiment}, {config.train_data_name} -> {config.test_data_name}")
+    print(f"Model: {config.network_name} | Experiment Setting: {config.intra_cross_experiment}, Train Dataset: {config.train_data_name} -> Test Dataset: {config.test_data_name} | Device: {device}")
     if config.intra_cross_experiment == 'cross':
         if config.train_data_name == 'lsvq_train':
             print(f"Fine-tune: {config.is_finetune}")
 
     dataset = VideoDataset_feature(test_df, videos_dir, config.test_data_name, resize_transform, config.resize, config.patch_size, config.target_size, top_n)
-
     data_loader = torch.utils.data.DataLoader(
-        dataset, batch_size=1, shuffle=False, num_workers=min(config.num_workers, os.cpu_count()), pin_memory=True
+        dataset, batch_size=1, shuffle=False, num_workers = min(config.num_workers, os.cpu_count() or 1), pin_memory = device.type == "cuda"
     )
-    # print(f"Dataset loaded. Total videos: {len(dataset)}, Total batches: {len(data_loader)}")
 
     # load models to device
     model_slowfast = SlowFast().to(device)
@@ -212,10 +203,13 @@ if __name__ == '__main__':
     blip_model = Blip2ForConditionalGeneration.from_pretrained("Salesforce/blip2-flan-t5-xl").to(device)
 
     input_features = 13056
-    if config.train_data_name == 'lsvq_train':
-        from model_regression_lsvq import Mlp
-    else:
-        from model_regression import Mlp
+    if config.intra_cross_experiment == 'intra':
+        if config.train_data_name == 'lsvq_train':
+            from model_regression_lsvq import Mlp, preprocess_data
+        else:
+            from model_regression import Mlp, preprocess_data
+    elif config.intra_cross_experiment == 'cross':
+        from model_regression_lsvq import Mlp, preprocess_data
     model_mlp = load_model(config, device, Mlp, input_features)
 
     quality_prediction = evaluate_video_quality(data_loader, model_slowfast, model_swint, clip_model, clip_preprocess, blip_processor, blip_model, prompts, model_mlp, device)
