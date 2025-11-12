@@ -155,7 +155,7 @@ def run(args):
     per_video_df = pd.DataFrame({
         'vid': test_vids.values,
         'MOS_raw': sorted_test_df['MOS_raw'].values,                # ground truth
-        'MOS_used': df_test_pred['MOS'].values,                     # MOS （已按数据集规则转换
+        'MOS_used': df_test_pred['MOS'].values,                     # MOS （Converted according to the dataset rules
         'pred': df_test_pred['y_test_pred'].values,                 # predict score
         'pred_logistic': df_test_pred['y_test_pred_logistic'].values # logistic fit
     })

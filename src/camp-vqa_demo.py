@@ -143,8 +143,8 @@ def get_video_metadata(video_path):
 
     width = info['streams'][0]['width']
     height = info['streams'][0]['height']
-    bitrate = info['streams'][0].get('bit_rate', 'N/A')
-    bitdepth = info['streams'][0].get('bits_per_raw_sample', 'N/A')
+    bitrate = info['streams'][0].get('bit_rate', 0)
+    bitdepth = info['streams'][0].get('bits_per_raw_sample', 0)
     framerate = info['streams'][0]['r_frame_rate']
     framerate = parse_framerate(framerate)
     return width, height, bitrate, bitdepth, framerate
@@ -160,9 +160,9 @@ def parse_arguments():
     parser.add_argument('--prompt_path', type=str, default="./config/prompts.json")
 
     parser.add_argument('--train_data_name', type=str, default='lsvq_train', help='Name of the training data')
-    parser.add_argument('--test_data_name', type=str, default='konvid_1k', help='Name of the testing data')
-    parser.add_argument('--test_video_path', type=str, default='../test_videos/5636101558.mp4', help='demo test video')
-    parser.add_argument('--subjective_score', type=float, default=45.2, help='0-100, give your opinion score')
+    parser.add_argument('--test_data_name', type=str, default='finevd', help='Name of the testing data')
+    parser.add_argument('--test_video_path', type=str, default='../test_videos/0_16_07_500001604801190-yase.mp4', help='demo test video')
+    parser.add_argument('--prediction_mode', type=float, default=50, help='default for inference')
 
     parser.add_argument('--network_name', type=str, default='camp-vqa')
     parser.add_argument('--num_workers', type=int, default=4)
@@ -186,7 +186,7 @@ if __name__ == '__main__':
     data = {'vid': [os.path.splitext(os.path.basename(config.test_video_path))[0]],
         'test_data_name': [config.test_data_name],
         'test_video_path': [config.test_video_path],
-        'subjective_score': [config.subjective_score],
+        'prediction_mode': [config.prediction_mode],
         'width': [width], 'height': [height], 'bitrate': [bitrate], 'bitdepth': [bitdepth], 'framerate': [framerate]}
     videos_dir = os.path.dirname(config.test_video_path)
     test_df = pd.DataFrame(data)

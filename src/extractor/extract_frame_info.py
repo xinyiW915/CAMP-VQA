@@ -40,12 +40,11 @@ class VideoDataset_feature(data.Dataset):
 
         # get metadata
         row = self.dataInfo.iloc[idx]
-        if 'subjective_score' in row and pd.notnull(row['subjective_score']):
-            mos = float(row['subjective_score'])
+        if 'prediction_mode' in row and pd.notnull(row['prediction_mode']):
+            mos = float(row['prediction_mode'])
         else:
             mos = float(row['mos'])
         metadata = (
-            # float(row["mos"]),
             mos,
             int(row["width"]),
             int(row["height"]),
