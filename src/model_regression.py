@@ -110,7 +110,8 @@ def preprocess_data(X, y):
     X_min = X.min(dim=0, keepdim=True).values
     X_max = X.max(dim=0, keepdim=True).values
     X = (X - X_min) / (X_max - X_min)
-    y = y.view(-1, 1).squeeze()
+    if y is not None:
+        y = y.view(-1, 1).squeeze()
     return X, y
 
 # define 4-parameter logistic regression
