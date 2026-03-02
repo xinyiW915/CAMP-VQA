@@ -39,7 +39,7 @@ Pearson’s Linear Correlation Coefficient (PLCC)
 | CAMP-VQA | SRCC                | 0.907   | 0.926 | 0.919    | 0.880      | 0.865  | 0.864          | 0.811 |
 | CAMP-VQA | PLCC                | 0.933   | 0.932 | 0.937    | 0.898      | 0.890  | 0.884          | 0.810 |
 
-More reported results can be found in **[correlation_result.ipynb](https://github.com/xinyiW915/CAMP-VQA/blob/main/src/correlation_result.ipynb)**.
+More reported results can be found in **[correlation_result.ipynb](https://github.com/xinyiW915/CAMP-VQA/blob/main/src/camp-vqa_result.ipynb)**.
 
 ## Proposed Model
 The goal of the proposed framework is to evaluate visual quality without reliance on the uncompressed version of a video. This framework, as outlined in Fig, comprises three components: SVE, TME and SEE.
